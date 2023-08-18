@@ -38,4 +38,12 @@ Access to a computer with Flutter SDK and development tools installed to practic
 Willingness to learn and a passion for building high-quality, scalable, and maintainable Flutter applications
 À qui ce cours s'adresse-t-il ?
 Any developer who already have a basic to medium level of knowledge in Flutter development and want to take their skills to the next level. They could be software developers, mobile app developers, or anyone interested in building high-quality, scalable, and maintainable Flutter applications. Learners who are familiar with software design patterns, object-oriented programming principles, and test-driven development concepts will find this course particularly valuable. Additionally, learners who are interested in improving their knowledge of reactive programming and state management techniques in Flutter will benefit from this course. By the end of this course, learners should have a solid understanding of clean architecture principles and be able to apply them to build efficient and maintainable Flutter applications
+# UDEMY
+https://www.udemy.com/course/deep-dive-into-clean-architecture-in-flutter-2022arabic/learn/lecture/37319788#overview
+
+# GITHUB
+https://github.com/tharwatsamy/clean_arch_bookly_app.git
+
+
+
 
