@@ -1,4 +1,4 @@
-import 'package:clean_arch_bookly_app_v1/features/splashView.dart';
+import 'package:clean_arch_bookly_app_v1/features/splash/presentation/views/splashView.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
