@@ -6,11 +6,9 @@ class SplashView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 100,
-      width: 100,
+    return const Placeholder(
       color: Colors.amber,
-      child: const Center(child: Text("data")),
+      child: Center(child: Text("data")),
     );
   }
 }
