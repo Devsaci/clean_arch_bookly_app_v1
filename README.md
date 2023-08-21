@@ -48,5 +48,6 @@ https://github.com/tharwatsamy/clean_arch_bookly_app.git
 6. Creating and structuring our project
 7. Create splash view body
 8. Splash view body
+9. Splash view body done
 
 
