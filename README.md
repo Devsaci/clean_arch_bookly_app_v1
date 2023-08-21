@@ -41,6 +41,7 @@ Any developer who already have a basic to medium level of knowledge in Flutter d
 # UDEMY
 https://www.udemy.com/course/deep-dive-into-clean-architecture-in-flutter-2022arabic/
 # GITHUB
+https://github.com/tharwatsamy/my_bookly.git
 https://github.com/tharwatsamy/clean_arch_bookly_app.git
 
 # Section 2 Presentation Building the UI
