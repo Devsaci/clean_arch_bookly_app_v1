@@ -6,8 +6,10 @@ class SplashviewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [],
+    return Column(
+      children: [
+        Image.asset("Path image"),
+      ],
     );
   }
 }
