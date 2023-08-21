@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SplashviewBody extends StatelessWidget {
-  SplashviewBody({super.key});
+  const SplashviewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
