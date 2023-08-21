@@ -6,6 +6,12 @@ class SplashviewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column();
+    return Center(
+      child: Container(
+        height: 200,
+        width: 200,
+        color: Colors.amber,
+      ),
+    );
   }
 }

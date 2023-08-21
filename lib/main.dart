@@ -2,10 +2,12 @@ import 'package:clean_arch_bookly_app_v1/features/splash/presentation/views/spla
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-void main(List<String> args) {}
+void main() {
+  runApp(const Bookly());
+}
 
-class BooklyApp extends StatelessWidget {
-  const BooklyApp({super.key});
+class Bookly extends StatelessWidget {
+  const Bookly({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
