@@ -11,7 +11,10 @@ class SplashviewBody extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset(AssetsData.logo),
+          Padding(
+            padding: const EdgeInsets.all(50.0),
+            child: Image.asset(AssetsData.logo),
+          ),
           const SizedBox(height: 50),
           const Text("BOOKLY", style: TextStyle(color: Colors.amber)),
         ],
