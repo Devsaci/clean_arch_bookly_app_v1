@@ -1,3 +1,4 @@
+import 'package:clean_arch_bookly_app_v1/core/uttlls/assets.dart';
 import 'package:flutter/material.dart';
 
 class SplashviewBody extends StatelessWidget {
@@ -10,7 +11,7 @@ class SplashviewBody extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset("assets/images/Logo.png"),
+          Image.asset(AssetsData.logo),
           const SizedBox(height: 50),
           const Text("BOOKLY", style: TextStyle(color: Colors.amber)),
         ],
