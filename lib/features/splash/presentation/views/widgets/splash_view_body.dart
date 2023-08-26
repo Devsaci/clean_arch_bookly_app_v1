@@ -9,13 +9,14 @@ class SplashviewBody extends StatefulWidget {
   State<SplashviewBody> createState() => _SplashviewBodyState();
 }
 
-class _SplashviewBodyState extends State<SplashviewBody> {
+class _SplashviewBodyState extends State<SplashviewBody>
+    with SingleTickerProviderStateMixin {
   late AnimationController animationController;
   late Animation slindingAnimation;
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
+    animationController = AnimationController(vsync: this);
   }
 
   @override
