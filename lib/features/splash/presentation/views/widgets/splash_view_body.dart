@@ -12,7 +12,7 @@ class SplashviewBody extends StatefulWidget {
 class _SplashviewBodyState extends State<SplashviewBody>
     with SingleTickerProviderStateMixin {
   late AnimationController animationController;
-  late Animation slindingAnimation;
+  late Animation<Offset> slindingAnimation;
   @override
   void initState() {
     super.initState();
@@ -20,6 +20,9 @@ class _SplashviewBodyState extends State<SplashviewBody>
       vsync: this,
       duration: const Duration(minutes: 1),
     );
+    slindingAnimation =
+        Tween<Offset>(begin: const Offset(0, 2), end: Offset.zero)
+            .animate(animationController);
   }
 
   @override
@@ -31,9 +34,12 @@ class _SplashviewBodyState extends State<SplashviewBody>
       children: [
         Image.asset(AssetsData.logo, color: Colors.deepOrange),
         const SizedBox(height: 50),
-        const Text(
-          "Choice book free",
-          textAlign: TextAlign.center,
+        SlideTransition(
+          position: slindingAnimation,
+          child: const Text(
+            "Choice book free",
+            textAlign: TextAlign.center,
+          ),
         ),
       ],
     );
