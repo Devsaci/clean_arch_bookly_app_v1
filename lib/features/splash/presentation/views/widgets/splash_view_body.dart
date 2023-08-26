@@ -11,6 +11,7 @@ class SplashviewBody extends StatefulWidget {
 
 class _SplashviewBodyState extends State<SplashviewBody> {
   late AnimationController animationController;
+  late Animation slindingAnimation;
   @override
   Widget build(BuildContext context) {
     return Column(
