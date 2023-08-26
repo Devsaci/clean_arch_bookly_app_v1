@@ -46,9 +46,9 @@ class _SplashviewBodyState extends State<SplashviewBody>
 
 class SlidingText extends StatelessWidget {
   const SlidingText({
-    super.key,
+    Key? key,
     required this.slindingAnimation,
-  });
+  }) : super(key: key);
 
   final Animation<Offset> slindingAnimation;
 
