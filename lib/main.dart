@@ -14,7 +14,7 @@ class Bookly extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      theme: ThemeData.light().copyWith(),
+      theme: ThemeData.dark().copyWith(),
       home: const SplashView(),
     );
   }
