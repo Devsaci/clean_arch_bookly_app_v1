@@ -38,14 +38,14 @@ class _SplashviewBodyState extends State<SplashviewBody>
       children: [
         Image.asset(AssetsData.logo, color: Colors.deepOrange),
         const SizedBox(height: 4),
-        SlindingText(slindingAnimation: slindingAnimation),
+        SlidingText(slindingAnimation: slindingAnimation),
       ],
     );
   }
 }
 
-class SlindingText extends StatelessWidget {
-  const SlindingText({
+class SlidingText extends StatelessWidget {
+  const SlidingText({
     super.key,
     required this.slindingAnimation,
   });
