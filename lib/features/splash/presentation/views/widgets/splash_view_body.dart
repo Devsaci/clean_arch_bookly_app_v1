@@ -38,13 +38,15 @@ class _SplashviewBodyState extends State<SplashviewBody>
       children: [
         Image.asset(AssetsData.logo, color: Colors.deepOrange),
         const SizedBox(height: 4),
-        SlideTransition(
-          position: slindingAnimation,
-          child: const Text(
-            "Choice book free",
-            textAlign: TextAlign.center,
-          ),
-        ),
+        Builder(builder: (context) {
+          return SlideTransition(
+            position: slindingAnimation,
+            child: const Text(
+              "Choice book free",
+              textAlign: TextAlign.center,
+            ),
+          );
+        }),
       ],
     );
   }
