@@ -18,11 +18,12 @@ class _SplashviewBodyState extends State<SplashviewBody>
     super.initState();
     animationController = AnimationController(
       vsync: this,
-      duration: const Duration(minutes: 1),
+      duration: const Duration(seconds: 1),
     );
     slindingAnimation =
-        Tween<Offset>(begin: const Offset(0, 2), end: Offset.zero)
+        Tween<Offset>(begin: const Offset(0, 10), end: Offset.zero)
             .animate(animationController);
+    animationController.forward();
     slindingAnimation.addListener(() {
       setState(() {});
     });
@@ -36,7 +37,7 @@ class _SplashviewBodyState extends State<SplashviewBody>
       //crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Image.asset(AssetsData.logo, color: Colors.deepOrange),
-        const SizedBox(height: 50),
+        const SizedBox(height: 4),
         SlideTransition(
           position: slindingAnimation,
           child: const Text(
