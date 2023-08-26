@@ -38,18 +38,33 @@ class _SplashviewBodyState extends State<SplashviewBody>
       children: [
         Image.asset(AssetsData.logo, color: Colors.deepOrange),
         const SizedBox(height: 4),
-        AnimatedBuilder(
-            animation: slindingAnimation,
-            builder: (context, _) {
-              return SlideTransition(
-                position: slindingAnimation,
-                child: const Text(
-                  "Choice book free",
-                  textAlign: TextAlign.center,
-                ),
-              );
-            }),
+        SlindingText(slindingAnimation: slindingAnimation),
       ],
+    );
+  }
+}
+
+class SlindingText extends StatelessWidget {
+  const SlindingText({
+    super.key,
+    required this.slindingAnimation,
+  });
+
+  final Animation<Offset> slindingAnimation;
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedBuilder(
+      animation: slindingAnimation,
+      builder: (context, _) {
+        return SlideTransition(
+          position: slindingAnimation,
+          child: const Text(
+            "Choice book free",
+            textAlign: TextAlign.center,
+          ),
+        );
+      },
     );
   }
 }
