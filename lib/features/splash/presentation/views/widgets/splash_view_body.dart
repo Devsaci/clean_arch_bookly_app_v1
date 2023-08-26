@@ -24,9 +24,9 @@ class _SplashviewBodyState extends State<SplashviewBody>
         Tween<Offset>(begin: const Offset(0, 10), end: Offset.zero)
             .animate(animationController);
     animationController.forward();
-    slindingAnimation.addListener(() {
-      setState(() {});
-    });
+    // slindingAnimation.addListener(() {
+    //   setState(() {});
+    // });
   }
 
   @override
