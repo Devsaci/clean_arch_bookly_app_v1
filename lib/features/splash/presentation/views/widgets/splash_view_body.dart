@@ -14,12 +14,9 @@ class SplashviewBody extends StatelessWidget {
       children: [
         Image.asset(AssetsData.logo, color: Colors.deepOrange),
         const SizedBox(height: 50),
-        const Center(
-          child: Text("BOOKLY",
-              style: TextStyle(
-                color: Colors.amber,
-                fontSize: 30,
-              )),
+        const Text(
+          "Choice book free",
+          textAlign: TextAlign.center,
         ),
       ],
     );
