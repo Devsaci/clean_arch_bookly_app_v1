@@ -2,8 +2,6 @@ import 'package:clean_arch_bookly_app_v1/features/splash/presentation/views/spla
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'constants.dart';
-
 void main() {
   runApp(const Bookly());
 }

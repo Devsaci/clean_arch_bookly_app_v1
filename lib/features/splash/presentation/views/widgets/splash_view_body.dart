@@ -16,7 +16,9 @@ class _SplashviewBodyState extends State<SplashviewBody>
   @override
   void initState() {
     super.initState();
-    animationController = AnimationController(vsync: this);
+    animationController = AnimationController(
+      vsync: this,
+    );
   }
 
   @override
