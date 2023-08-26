@@ -13,6 +13,12 @@ class _SplashviewBodyState extends State<SplashviewBody> {
   late AnimationController animationController;
   late Animation slindingAnimation;
   @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
