@@ -31,6 +31,14 @@ class _SplashviewBodyState extends State<SplashviewBody>
     // });
   }
 
+  //   late AnimationController animationController;
+
+  @override
+  void dispose() {
+    super.dispose();
+    animationController.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
