@@ -1,6 +1,8 @@
 import 'package:clean_arch_bookly_app_v1/core/uttlls/assets.dart';
 import 'package:flutter/material.dart';
 
+import 'slinding_text.dart';
+
 class SplashviewBody extends StatefulWidget {
   // const SplashviewBody({super.key});
   const SplashviewBody({Key? key}) : super(key: key);
@@ -40,31 +42,6 @@ class _SplashviewBodyState extends State<SplashviewBody>
         const SizedBox(height: 4),
         SlidingText(slindingAnimation: slindingAnimation),
       ],
-    );
-  }
-}
-
-class SlidingText extends StatelessWidget {
-  const SlidingText({
-    Key? key,
-    required this.slindingAnimation,
-  }) : super(key: key);
-
-  final Animation<Offset> slindingAnimation;
-
-  @override
-  Widget build(BuildContext context) {
-    return AnimatedBuilder(
-      animation: slindingAnimation,
-      builder: (context, _) {
-        return SlideTransition(
-          position: slindingAnimation,
-          child: const Text(
-            "Choice book free",
-            textAlign: TextAlign.center,
-          ),
-        );
-      },
     );
   }
 }
