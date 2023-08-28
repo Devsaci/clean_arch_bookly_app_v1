@@ -50,6 +50,9 @@ https://github.com/tharwatsamy/clean_arch_bookly_app.git
 8. Splash view body
 9. Splash view body done
 10. change theme
+# https://github.com/tharwatsamy/my_bookly/commit/4e89af34e0e923d06f77551178ff7ba816b349e7
 11. Adding animation
+
+
 
 
