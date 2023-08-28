@@ -3,6 +3,7 @@ import 'package:clean_arch_bookly_app_v1/features/home/presentation/views/home_v
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../../../../constants.dart';
 import 'slinding_text.dart';
 
 class SplashviewBody extends StatefulWidget {
@@ -26,8 +27,11 @@ class _SplashviewBodyState extends State<SplashviewBody>
     Future.delayed(
       const Duration(seconds: 3),
       () {
-        Get.to(() => const HomeView(),
-            transition: Transition.fade, duration: const Duration());
+        Get.to(
+          () => const HomeView(),
+          transition: Transition.fade,
+          duration: kTranstionDuration,
+        );
       },
     );
   }
