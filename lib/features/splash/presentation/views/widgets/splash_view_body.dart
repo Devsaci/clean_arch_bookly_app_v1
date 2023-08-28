@@ -1,5 +1,7 @@
 import 'package:clean_arch_bookly_app_v1/core/uttlls/assets.dart';
+import 'package:clean_arch_bookly_app_v1/features/home/presentation/views/home_view.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import 'slinding_text.dart';
 
@@ -21,7 +23,14 @@ class _SplashviewBodyState extends State<SplashviewBody>
 
     initSlidingAnimation();
 
-    Future.delayed(const Duration(seconds: 3));
+    Future.delayed(
+      const Duration(seconds: 3),
+      () {
+        Get.to(
+          () => const HomeView(),
+        );
+      },
+    );
   }
 
   @override
