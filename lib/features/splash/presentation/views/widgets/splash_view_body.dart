@@ -23,20 +23,7 @@ class _SplashviewBodyState extends State<SplashviewBody>
         Tween<Offset>(begin: const Offset(0, 10), end: Offset.zero)
             .animate(animationController);
     animationController.forward();
-    // slindingAnimation.addListener(() {
-    //   setState(() {});
-    // });
   }
-
-// methode Extracted  initSlidingAnimation()
-  AnimationController initSlidingAnimation() {
-    return AnimationController(
-      vsync: this,
-      duration: const Duration(seconds: 1),
-    );
-  }
-
-  //   late AnimationController animationController;
 
   @override
   void dispose() {
@@ -55,6 +42,14 @@ class _SplashviewBodyState extends State<SplashviewBody>
         const SizedBox(height: 4),
         SlidingText(slindingAnimation: slindingAnimation),
       ],
+    );
+  }
+
+  // methode Extracted  initSlidingAnimation()
+  AnimationController initSlidingAnimation() {
+    return AnimationController(
+      vsync: this,
+      duration: const Duration(seconds: 1),
     );
   }
 }
