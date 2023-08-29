@@ -1,3 +1,4 @@
+import 'package:clean_arch_bookly_app_v1/core/uttlls/assets.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_app_bar.dart';
@@ -21,6 +22,19 @@ class FeaturedBooksListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Container(
+      height: 100,
+      width: 100,
+      decoration: BoxDecoration(
+        color: Colors.red,
+        borderRadius: BorderRadius.circular(16),
+        image: const DecorationImage(
+          // fit: BoxFit.fill,
+          image: AssetImage(
+            AssetsData.testImage,
+          ),
+        ),
+      ),
+    );
   }
 }
