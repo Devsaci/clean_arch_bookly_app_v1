@@ -23,7 +23,7 @@ class FeaturedBooksListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 190,
+      height: MediaQuery.of(context).size.height * .3,
       width: 130,
       decoration: BoxDecoration(
         color: Colors.red,
