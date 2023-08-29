@@ -52,6 +52,9 @@ https://github.com/tharwatsamy/clean_arch_bookly_app.git
 10. change theme
 # https://github.com/tharwatsamy/my_bookly/commit/4e89af34e0e923d06f77551178ff7ba816b349e7
 11. Adding animation
+
+# refactor init satate & navigate to home
+https://github.com/tharwatsamy/my_bookly/commit/db04cb86e3e388476bff2e6931a62dc6e54e491c#diff-98de3b22ccfee31379cff73c6d785a5754eed5e6387f8d2437d1fb6617730a39
 12. Refactor code
 
 
