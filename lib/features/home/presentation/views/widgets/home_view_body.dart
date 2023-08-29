@@ -1,5 +1,6 @@
 import 'package:clean_arch_bookly_app_v1/core/uttlls/assets.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -24,7 +25,7 @@ class CustomAppBar extends StatelessWidget {
         Image.asset(AssetsData.logo),
         IconButton(
           onPressed: () {},
-          icon: const Icon(Icons.search),
+          icon: const Icon(FontAwesomeIcons.magnifyingGlass),
         )
       ],
     );
