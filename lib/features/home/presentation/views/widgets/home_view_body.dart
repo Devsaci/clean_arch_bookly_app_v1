@@ -22,6 +22,10 @@ class CustomAppBar extends StatelessWidget {
     return Row(
       children: [
         Image.asset(AssetsData.logo),
+        IconButton(
+          onPressed: () {},
+          icon: const Icon(Icons.search),
+        )
       ],
     );
   }
