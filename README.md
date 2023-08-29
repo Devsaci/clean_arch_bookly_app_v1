@@ -60,7 +60,9 @@ https://github.com/tharwatsamy/my_bookly/commit/db04cb86e3e388476bff2e6931a62dc6
 # add custom app bar to home view
 https://github.com/tharwatsamy/my_bookly/commits/main?after=f4820be98b36e4988d2ce5650e295f9bde60eb1c+34&branch=main&qualified_name=refs%2Fheads%2Fmain
 13. Create custom app bar
-
+# add custom list view item to home
+https://github.com/tharwatsamy/my_bookly/commit/1cf2cbd6c984628c4d8faedbe3c5ac4634fbd9c5
+14. Featured list view item
 
 
 
