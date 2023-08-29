@@ -25,16 +25,17 @@ class FeaturedBooksListView extends StatelessWidget {
     return Container(
       height: 100,
       width: 100,
-      decoration: BoxDecoration(
-        color: Colors.red,
-        borderRadius: BorderRadius.circular(16),
-        image: const DecorationImage(
-          // fit: BoxFit.fill,
-          image: AssetImage(
-            AssetsData.testImage,
-          ),
-        ),
-      ),
+      child: Image.asset(AssetsData.testImage),
+      // decoration: BoxDecoration(
+      //   color: Colors.red,
+      //   borderRadius: BorderRadius.circular(16),
+      //   image: const DecorationImage(
+      //     // fit: BoxFit.fill,
+      //     image: AssetImage(
+      //       AssetsData.testImage,
+      //     ),
+      //   ),
+      // ),
     );
   }
 }
