@@ -57,7 +57,9 @@ https://github.com/tharwatsamy/clean_arch_bookly_app.git
 https://github.com/tharwatsamy/my_bookly/commit/db04cb86e3e388476bff2e6931a62dc6e54e491c#diff-98de3b22ccfee31379cff73c6d785a5754eed5e6387f8d2437d1fb6617730a39
 12. Refactor code
 
-
+# add custom app bar to home view
+https://github.com/tharwatsamy/my_bookly/commits/main?after=f4820be98b36e4988d2ce5650e295f9bde60eb1c+34&branch=main&qualified_name=refs%2Fheads%2Fmain
+13. Create custom app bar
 
 
 
