@@ -22,10 +22,17 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Image.asset(AssetsData.logo),
+        Image.asset(
+          AssetsData.logo,
+          height: 16,
+        ),
+        const Spacer(),
         IconButton(
           onPressed: () {},
-          icon: const Icon(FontAwesomeIcons.magnifyingGlass),
+          icon: const Icon(
+            FontAwesomeIcons.magnifyingGlass,
+            size: 30,
+          ),
         )
       ],
     );
