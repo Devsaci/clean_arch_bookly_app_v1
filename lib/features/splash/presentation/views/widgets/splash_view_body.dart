@@ -27,20 +27,6 @@ class _SplashviewBodyState extends State<SplashviewBody>
     navigateToHome();
   }
 
-// Extracted Methode Future.delayed HomeView
-  void navigateToHome() {
-    Future.delayed(
-      const Duration(seconds: 3),
-      () {
-        Get.to(
-          () => const HomeView(),
-          transition: Transition.fade,
-          duration: kTranstionDuration,
-        );
-      },
-    );
-  }
-
   @override
   void dispose() {
     super.dispose();
@@ -71,5 +57,19 @@ class _SplashviewBodyState extends State<SplashviewBody>
         Tween<Offset>(begin: const Offset(0, 10), end: Offset.zero)
             .animate(animationController);
     animationController.forward();
+  }
+
+  // Extracted Methode Future.delayed HomeView
+  void navigateToHome() {
+    Future.delayed(
+      const Duration(seconds: 3),
+      () {
+        Get.to(
+          () => const HomeView(),
+          transition: Transition.fade,
+          duration: kTranstionDuration,
+        );
+      },
+    );
   }
 }
