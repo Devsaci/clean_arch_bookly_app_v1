@@ -1,3 +1,4 @@
+import 'package:clean_arch_bookly_app_v1/core/uttlls/assets.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -18,6 +19,10 @@ class CustomAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Row(
+      children: [
+        Image.asset(AssetsData.logo),
+      ],
+    );
   }
 }
