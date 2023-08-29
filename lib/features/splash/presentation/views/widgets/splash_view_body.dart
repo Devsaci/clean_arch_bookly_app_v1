@@ -24,6 +24,11 @@ class _SplashviewBodyState extends State<SplashviewBody>
 
     initSlidingAnimation();
 
+    navigateToHome();
+  }
+
+// Extracted Methode Future.delayed HomeView
+  void navigateToHome() {
     Future.delayed(
       const Duration(seconds: 3),
       () {
