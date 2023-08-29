@@ -22,16 +22,19 @@ class FeaturedBooksListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: MediaQuery.of(context).size.height * .3,
-      width: 130,
-      decoration: BoxDecoration(
-        color: Colors.red,
-        borderRadius: BorderRadius.circular(50),
-        image: const DecorationImage(
-          //fit: BoxFit.fill,
-          image: AssetImage(
-            AssetsData.testImage,
+    return AspectRatio(
+      aspectRatio: 1,
+      child: Container(
+        height: MediaQuery.of(context).size.height * .3,
+        width: 130,
+        decoration: BoxDecoration(
+          color: Colors.red,
+          borderRadius: BorderRadius.circular(50),
+          image: const DecorationImage(
+            //fit: BoxFit.fill,
+            image: AssetImage(
+              AssetsData.testImage,
+            ),
           ),
         ),
       ),
