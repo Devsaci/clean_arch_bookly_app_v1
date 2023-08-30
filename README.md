@@ -66,5 +66,8 @@ https://github.com/tharwatsamy/my_bookly/commit/1cf2cbd6c984628c4d8faedbe3c5ac46
 # add featured list view to home
 https://github.com/tharwatsamy/my_bookly/commit/d0bdef9718d95dd711f1a68d3595ecf3dedd1fe6
 15. Featured list view
+# create styles file & add best seller text
+https://github.com/tharwatsamy/my_bookly/commit/418057ccedbb608ca439c2f70063a7ac9a0ac85a
+16. Add styles file and text to home
 
 
