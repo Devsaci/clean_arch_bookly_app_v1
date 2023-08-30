@@ -11,7 +11,6 @@ class HomeViewBody extends StatelessWidget {
     return const Column(
       children: [
         CustomAppBar(),
-        //CustumListViewItem(),
         FeaturedBooksListView(),
       ],
     );
@@ -30,7 +29,7 @@ class FeaturedBooksListView extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) => const Padding(
           padding: EdgeInsets.symmetric(horizontal: 8),
-          child: CustumListViewItem(),
+          child: FeaturedListViewItem(),
         ),
       ),
     );
