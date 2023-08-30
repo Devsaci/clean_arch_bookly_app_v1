@@ -63,6 +63,8 @@ https://github.com/tharwatsamy/my_bookly/commits/main?after=f4820be98b36e4988d2c
 # add custom list view item to home
 https://github.com/tharwatsamy/my_bookly/commit/1cf2cbd6c984628c4d8faedbe3c5ac4634fbd9c5
 14. Featured list view item
-
+# add featured list view to home
+https://github.com/tharwatsamy/my_bookly/commit/d0bdef9718d95dd711f1a68d3595ecf3dedd1fe6
+15. Featured list view
 
 
