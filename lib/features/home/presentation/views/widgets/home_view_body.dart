@@ -1,3 +1,4 @@
+import 'package:clean_arch_bookly_app_v1/core/uttlls/assets.dart';
 import 'package:clean_arch_bookly_app_v1/core/uttlls/styles.dart';
 import 'package:flutter/material.dart';
 
@@ -34,8 +35,11 @@ class BestSellerListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Row(
+      children: [
+        Image.asset(AssetsData.testImage),
+      ],
+    );
   }
 }
 
