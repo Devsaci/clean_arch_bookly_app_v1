@@ -35,10 +35,32 @@ class BestSellerListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Image.asset(AssetsData.testImage),
-      ],
+    return SizedBox(
+      height: 125,
+      child: Row(
+        children: [
+          AspectRatio(
+            aspectRatio: 2.8 / 4,
+            child: Container(
+              //height: MediaQuery.of(context).size.height * .25,
+              // width: 100,
+              decoration: BoxDecoration(
+                color: Colors.red,
+                borderRadius: BorderRadius.circular(60),
+                image: const DecorationImage(
+                  fit: BoxFit.fill,
+                  image: AssetImage(
+                    AssetsData.testImage,
+                  ),
+                ),
+              ),
+            ),
+          ),
+          Column(
+            children: [],
+          )
+        ],
+      ),
     );
   }
 }
