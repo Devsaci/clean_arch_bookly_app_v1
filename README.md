@@ -73,5 +73,7 @@ https://github.com/tharwatsamy/my_bookly/commit/418057ccedbb608ca439c2f70063a7ac
 # create styles file and add title to home view
 https://github.com/tharwatsamy/my_bookly/commit/fc39a8beb15d20ea609568d184940d5fb54f1411
 17. add font family
-
+# best seller list view item part one
+https://github.com/tharwatsamy/my_bookly/commit/2bb0a08e16322093dc1c9be2c846442806645cc3
+18. Best seller list view item part one
 
