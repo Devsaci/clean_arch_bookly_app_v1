@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'custom_app_bar.dart';
 import 'custom_book_item.dart';
+import 'featured_list_view.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -20,28 +21,39 @@ class HomeViewBody extends StatelessWidget {
           Text(
             "Best Seller",
             style: Styles.titleMedium,
-          )
+          ),
+          BestSellerListView()
         ],
       ),
     );
   }
 }
 
-class FeaturedBooksListView extends StatelessWidget {
-  const FeaturedBooksListView({super.key});
+class BestSellerListView extends StatelessWidget {
+  const BestSellerListView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: MediaQuery.of(context).size.height * .3,
-      child: ListView.builder(
-        itemCount: 5,
-        scrollDirection: Axis.horizontal,
-        itemBuilder: (context, index) => const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 8),
-          child: FeaturedListViewItem(),
-        ),
-      ),
-    );
+    // TODO: implement build
+    throw UnimplementedError();
   }
 }
+
+// class FeaturedBooksListView extends StatelessWidget {
+//   const FeaturedBooksListView({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return SizedBox(
+//       height: MediaQuery.of(context).size.height * .3,
+//       child: ListView.builder(
+//         itemCount: 5,
+//         scrollDirection: Axis.horizontal,
+//         itemBuilder: (context, index) => const Padding(
+//           padding: EdgeInsets.symmetric(horizontal: 8),
+//           child: FeaturedListViewItem(),
+//         ),
+//       ),
+//     );
+//   }
+// }
