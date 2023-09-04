@@ -70,4 +70,8 @@ https://github.com/tharwatsamy/my_bookly/commit/d0bdef9718d95dd711f1a68d3595ecf3
 https://github.com/tharwatsamy/my_bookly/commit/418057ccedbb608ca439c2f70063a7ac9a0ac85a
 16. Add styles file and text to home
 
+# create styles file and add title to home view
+https://github.com/tharwatsamy/my_bookly/commit/fc39a8beb15d20ea609568d184940d5fb54f1411
+17. add font family
+
 
