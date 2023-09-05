@@ -63,6 +63,7 @@ class BestSellerListView extends StatelessWidget {
                 width: MediaQuery.of(context).size.width * .5,
                 child: const Text(
                   'Harry Potter and the Goblet of Fire',
+                  maxLines: 2,
                 ),
               ),
             ],
