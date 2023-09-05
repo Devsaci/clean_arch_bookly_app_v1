@@ -55,6 +55,7 @@ class BestSellerListView extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(width: 30),
           const Column(
             children: [],
           )
