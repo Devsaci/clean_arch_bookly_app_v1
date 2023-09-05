@@ -57,11 +57,11 @@ class BestSellerListView extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 30),
-          const Column(
+          Column(
             children: [
               SizedBox(
-                width: 200,
-                child: Text(
+                width: MediaQuery.of(context).size.width * .5,
+                child: const Text(
                   'Harry Potter and the Goblet of Fire',
                 ),
               ),
