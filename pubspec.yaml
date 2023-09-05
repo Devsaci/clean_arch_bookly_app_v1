@@ -67,9 +67,11 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-      - family: GT Spectra Fine
-        fonts:
-          - asset: assets/fonts/GT Spectra Fine Regular.ttf
+    - family: GT Spectra Fine
+      fonts:
+        - asset: assets\fonts\GT-Sectra-Fine-Regular.ttf
+
+        # \assets\fonts\GT-Sectra-Fine-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
