@@ -3,7 +3,6 @@ import 'package:clean_arch_bookly_app_v1/core/uttlls/styles.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_app_bar.dart';
-import 'custom_book_item.dart';
 import 'featured_list_view.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -56,7 +55,7 @@ class BestSellerListView extends StatelessWidget {
               ),
             ),
           ),
-          Column(
+          const Column(
             children: [],
           )
         ],
