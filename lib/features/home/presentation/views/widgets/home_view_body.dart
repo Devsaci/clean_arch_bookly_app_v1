@@ -1,3 +1,4 @@
+import 'package:clean_arch_bookly_app_v1/constants.dart';
 import 'package:clean_arch_bookly_app_v1/core/uttlls/assets.dart';
 import 'package:clean_arch_bookly_app_v1/core/uttlls/styles.dart';
 import 'package:flutter/material.dart';
@@ -10,7 +11,7 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
+    return Padding(
       padding: EdgeInsets.symmetric(horizontal: 30),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -20,7 +21,7 @@ class HomeViewBody extends StatelessWidget {
           SizedBox(height: 20),
           Text(
             "Best Seller",
-            style: Styles.textStyle18,
+            style: Styles.textStyle30.copyWith(fontFamily: kGtSectraFine),
           ),
           SizedBox(height: 20),
           BestSellerListView(),
@@ -63,6 +64,7 @@ class BestSellerListView extends StatelessWidget {
                 width: MediaQuery.of(context).size.width * .5,
                 child: const Text(
                   'Harry Potter and the Goblet of Fire',
+                  style: Styles.textStyle16,
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                 ),
