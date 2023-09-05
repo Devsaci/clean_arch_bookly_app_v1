@@ -84,3 +84,6 @@ https://github.com/tharwatsamy/my_bookly/commit/2e1db9e11a244125e7c5f39d404df23f
 # create app styles
 https://github.com/tharwatsamy/my_bookly/commit/2e1db9e11a244125e7c5f39d404df23f855b0806
 21. Styles part two
+# best sellert item part 2
+https://github.com/tharwatsamy/my_bookly/commit/d8aa14953ceaad834c69c993e2d9b0ac2605238f
+22. Best seller item part 2
