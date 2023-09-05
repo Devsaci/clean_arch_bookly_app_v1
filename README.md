@@ -78,6 +78,6 @@ https://github.com/tharwatsamy/my_bookly/commit/2bb0a08e16322093dc1c9be2c8464428
 18. Best seller list view item part one
 # 
 19. Install font family
-# 
-
+# create app styles
+https://github.com/tharwatsamy/my_bookly/commit/2e1db9e11a244125e7c5f39d404df23f855b0806
 20. styles part one
