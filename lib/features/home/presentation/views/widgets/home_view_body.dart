@@ -64,6 +64,7 @@ class BestSellerListView extends StatelessWidget {
                 child: const Text(
                   'Harry Potter and the Goblet of Fire',
                   maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
                 ),
               ),
             ],
