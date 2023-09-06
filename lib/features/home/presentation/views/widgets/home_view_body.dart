@@ -69,6 +69,9 @@ class BestSellerListView extends StatelessWidget {
                   overflow: TextOverflow.ellipsis,
                 ),
               ),
+              const SizedBox(height: 3),
+              const Text('J.K. Rowling', style: Styles.textStyle14),
+              const SizedBox(height: 3),
             ],
           )
         ],
