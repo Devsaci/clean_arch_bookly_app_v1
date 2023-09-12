@@ -51,7 +51,8 @@ class BestSellerListView extends StatelessWidget {
                     "19.99 euro",
                     style: Styles.textStyle20
                         .copyWith(fontWeight: FontWeight.bold),
-                  )
+                  ),
+                  const Spacer(),
                 ],
               )
             ],
