@@ -22,10 +22,11 @@ class HomeViewBody extends StatelessWidget {
           const SizedBox(height: 20),
           Text(
             "Best Seller",
-            style: Styles.textStyle30.copyWith(fontFamily: kGtSectraFine),
+            style: Styles.textStyle30
+                .copyWith(fontFamily: kGtSectraFine, fontSize: 20),
           ),
           const SizedBox(height: 20),
-          const BestSellerListViewItem(),
+          const BestSellerListView(),
         ],
       ),
     );
@@ -37,10 +38,13 @@ class BestSellerListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      itemBuilder: (context, index) {
-        return const BestSellerListViewItem();
-      },
+    return Expanded(
+      child: ListView.builder(
+        itemCount: 10,
+        itemBuilder: (context, index) {
+          return const BestSellerListViewItem();
+        },
+      ),
     );
   }
 }
