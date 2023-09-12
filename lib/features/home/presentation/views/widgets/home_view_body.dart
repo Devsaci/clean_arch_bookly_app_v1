@@ -40,6 +40,7 @@ class BestSellerListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: ListView.builder(
+        padding: EdgeInsets.zero,
         itemCount: 10,
         itemBuilder: (context, index) {
           return const Padding(
