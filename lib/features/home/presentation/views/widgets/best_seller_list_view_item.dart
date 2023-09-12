@@ -53,6 +53,7 @@ class BestSellerListView extends StatelessWidget {
                         .copyWith(fontWeight: FontWeight.bold),
                   ),
                   const Spacer(),
+                  const BookRating(),
                 ],
               )
             ],
@@ -60,5 +61,14 @@ class BestSellerListView extends StatelessWidget {
         ],
       ),
     );
+  }
+}
+
+class BookRating extends StatelessWidget {
+  const BookRating({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    throw UnimplementedError();
   }
 }
