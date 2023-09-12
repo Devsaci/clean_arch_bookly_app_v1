@@ -1,5 +1,5 @@
 import 'package:clean_arch_bookly_app_v1/constants.dart';
-import 'package:clean_arch_bookly_app_v1/core/uttlls/assets.dart';
+
 import 'package:clean_arch_bookly_app_v1/core/uttlls/styles.dart';
 import 'package:clean_arch_bookly_app_v1/features/home/presentation/views/widgets/best_seller_list_view_item.dart';
 import 'package:flutter/material.dart';
