@@ -25,7 +25,7 @@ class HomeViewBody extends StatelessWidget {
             style: Styles.textStyle30.copyWith(fontFamily: kGtSectraFine),
           ),
           const SizedBox(height: 20),
-          const BestSellerListView(),
+          const BestSellerListViewItem(),
         ],
       ),
     );
