@@ -93,3 +93,6 @@ https://github.com/tharwatsamy/my_bookly/commit/6f89760b873eacc32f28e92c82bfd162
 # best sellert item done
 https://github.com/tharwatsamy/my_bookly/commit/cc32c155d37f0659b24348708ffd8e57128eb2fe
 24. Best seller item done
+# best seller list view done
+https://github.com/tharwatsamy/my_bookly/commit/0c5ba7648ce9a391bafd9ea5f3a1554c515e9e1f
+25. Best seller list view & Custom scroll view
