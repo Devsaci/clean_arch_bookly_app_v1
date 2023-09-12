@@ -45,6 +45,15 @@ class BestSellerListView extends StatelessWidget {
               const SizedBox(height: 3),
               const Text('J.K. Rowling', style: Styles.textStyle14),
               const SizedBox(height: 3),
+              Row(
+                children: [
+                  Text(
+                    "19.99 euro",
+                    style: Styles.textStyle20
+                        .copyWith(fontWeight: FontWeight.bold),
+                  )
+                ],
+              )
             ],
           )
         ],
