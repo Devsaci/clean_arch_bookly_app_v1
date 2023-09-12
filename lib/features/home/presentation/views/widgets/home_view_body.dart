@@ -37,6 +37,10 @@ class BestSellerListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    throw UnimplementedError();
+    return ListView.builder(
+      itemBuilder: (context, index) {
+        return const BestSellerListViewItem();
+      },
+    );
   }
 }
