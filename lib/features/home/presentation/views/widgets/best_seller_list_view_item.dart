@@ -36,7 +36,7 @@ class BestSellerListView extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  width: MediaQuery.of(context).size.width * .5,
+                  width: MediaQuery.of(context).size.width * .9,
                   child: Text(
                     'Harry Potter and the Goblet of Fire',
                     style:
