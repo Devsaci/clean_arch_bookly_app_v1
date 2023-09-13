@@ -99,3 +99,6 @@ https://github.com/tharwatsamy/my_bookly/commit/0c5ba7648ce9a391bafd9ea5f3a1554c
 # create book_details_view.dart
 https://github.com/tharwatsamy/my_bookly/commit/09e6618464c2ae6f34ff7bd882ea6565ab9cb892
 26. Create book details view
+# refactor navigation in our app
+https://github.com/tharwatsamy/my_bookly/commit/a031d9ea2d7e9916f2d2327fd9c03f401f488da3
+27. Refactor navigation
