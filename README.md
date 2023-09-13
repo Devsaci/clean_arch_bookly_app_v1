@@ -96,3 +96,6 @@ https://github.com/tharwatsamy/my_bookly/commit/cc32c155d37f0659b24348708ffd8e57
 # best seller list view done
 https://github.com/tharwatsamy/my_bookly/commit/0c5ba7648ce9a391bafd9ea5f3a1554c515e9e1f
 25. Best seller list view & Custom scroll view
+# create book_details_view.dart
+https://github.com/tharwatsamy/my_bookly/commit/09e6618464c2ae6f34ff7bd882ea6565ab9cb892
+26. Create book details view
