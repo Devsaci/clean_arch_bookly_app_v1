@@ -15,9 +15,8 @@ final GoRouter _router = GoRouter(
   routes: <RouteBase>[
     GoRoute(
       path: '/',
-      builder: (BuildContext context, GoRouterState state) {
-        return const SplashView();
-      },
+      builder: (BuildContext context, GoRouterState state) =>
+          const SplashView(),
       // routes: <RouteBase>[
       //   GoRoute(
       //     path: 'details',
