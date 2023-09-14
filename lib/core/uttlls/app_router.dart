@@ -5,6 +5,8 @@ import '../../features/home/presentation/views/home_view.dart';
 import '../../features/splash/presentation/views/splash_view.dart';
 
 abstract class AppRouter {
+  static const kHomeView = '/homeView';
+
   /// The route configuration.
   static final GoRouter router = GoRouter(
     routes: <RouteBase>[
@@ -14,7 +16,7 @@ abstract class AppRouter {
             const SplashView(),
       ),
       GoRoute(
-        path: '/homeView',
+        path: kHomeView,
         builder: (BuildContext context, GoRouterState state) =>
             const HomeView(),
       ),

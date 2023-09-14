@@ -1,3 +1,4 @@
+import 'package:clean_arch_bookly_app_v1/core/uttlls/app_router.dart';
 import 'package:clean_arch_bookly_app_v1/core/uttlls/assets.dart';
 
 import 'package:flutter/material.dart';
@@ -63,7 +64,7 @@ class _SplashviewBodyState extends State<SplashviewBody>
     Future.delayed(
       const Duration(seconds: 3),
       () {
-        GoRouter.of(context).push('/homeView');
+        GoRouter.of(context).push(AppRouter.kHomeView);
         //context.go('/homeView');
       },
     );
