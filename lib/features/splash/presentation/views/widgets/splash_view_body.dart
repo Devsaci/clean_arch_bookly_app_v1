@@ -1,9 +1,9 @@
 import 'package:clean_arch_bookly_app_v1/core/uttlls/assets.dart';
-import 'package:clean_arch_bookly_app_v1/features/home/presentation/views/home_view.dart';
+//import 'package:clean_arch_bookly_app_v1/features/home/presentation/views/home_view.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+//import 'package:get/get.dart';
 
-import '../../../../../constants.dart';
+//import '../../../../../constants.dart';
 import 'slinding_text.dart';
 
 class SplashviewBody extends StatefulWidget {
@@ -64,11 +64,11 @@ class _SplashviewBodyState extends State<SplashviewBody>
     Future.delayed(
       const Duration(seconds: 3),
       () {
-        Get.to(
-          () => const HomeView(),
-          transition: Transition.fade,
-          duration: kTranstionDuration,
-        );
+        // Get.to(
+        //   () => const HomeView(),
+        //   transition: Transition.fade,
+        //   duration: kTranstionDuration,
+        // );
       },
     );
   }
