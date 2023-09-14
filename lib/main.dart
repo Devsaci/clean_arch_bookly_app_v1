@@ -1,4 +1,5 @@
 import 'package:clean_arch_bookly_app_v1/constants.dart';
+import 'package:clean_arch_bookly_app_v1/features/home/presentation/views/home_view.dart';
 import 'package:clean_arch_bookly_app_v1/features/splash/presentation/views/splash_view.dart';
 //import 'package:clean_arch_bookly_app_v1/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
@@ -17,14 +18,10 @@ final GoRouter _router = GoRouter(
       path: '/',
       builder: (BuildContext context, GoRouterState state) =>
           const SplashView(),
-      // routes: <RouteBase>[
-      //   GoRoute(
-      //     path: 'details',
-      //     builder: (BuildContext context, GoRouterState state) {
-      //       return const DetailsScreen();
-      //     },
-      //   ),
-      // ],
+    ),
+    GoRoute(
+      path: '/homeView',
+      builder: (BuildContext context, GoRouterState state) => const HomeView(),
     ),
   ],
 );
