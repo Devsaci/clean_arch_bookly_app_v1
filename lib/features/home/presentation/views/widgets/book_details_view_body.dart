@@ -18,8 +18,10 @@ class CustomBookDetailsAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
-      children: [],
+    return Row(
+      children: [
+        IconButton(onPressed: () {}, icon: const Icon(Icons.close)),
+      ],
     );
   }
 }
