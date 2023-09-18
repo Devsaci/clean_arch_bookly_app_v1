@@ -9,7 +9,7 @@ class BookDetailsView extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: SafeArea(
-        minimum: EdgeInsets.only(top: 50),
+        //minimum: EdgeInsets.only(top: 50),
         child: BookDetailsViewBody(),
       ),
     );
