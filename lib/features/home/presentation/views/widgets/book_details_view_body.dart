@@ -24,6 +24,7 @@ class BookDetailsViewBody extends StatelessWidget {
             'The Jungle Book',
             style: Styles.textStyle30.copyWith(fontWeight: FontWeight.bold),
           ),
+          const SizedBox(height: 6),
         ],
       ),
     );
