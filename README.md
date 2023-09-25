@@ -105,5 +105,6 @@ https://github.com/tharwatsamy/my_bookly/commit/a031d9ea2d7e9916f2d2327fd9c03f40
 # create custom book details app bar
 https://github.com/tharwatsamy/my_bookly/commit/2a1c27ace537f8be28ead9b6c495d59e0b153f91
 28. Create custom book details app bar
-# 
+# add custom book item to book details view
+https://github.com/tharwatsamy/my_bookly/commit/55dab84378d78c775b6f748bea719f8024ca076c
 29. Add Custom image to book details view
