@@ -109,5 +109,4 @@ https://github.com/tharwatsamy/my_bookly/commit/2a1c27ace537f8be28ead9b6c495d59e
 https://github.com/tharwatsamy/my_bookly/commit/55dab84378d78c775b6f748bea719f8024ca076c
 29. Add Custom image to book details view
 # add title to book details
-https://github.com/tharwatsamy/my_bookly/commit/b33b2ea44c159da7593403ebc4214b466a3347bd
-30. Add title and subTitle to book details view
+https://github.com/tharwatsamy/my_bookly/commit/a8ddec3d147cc6a66ab3449be1155e6efc319cba 30. Add title and subTitle to book details view

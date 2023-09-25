@@ -18,6 +18,7 @@ class BookDetailsViewBody extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: width * .14),
             child: const CustumBookImage(),
           ),
+          const SizedBox(height: 43),
         ],
       ),
     );
