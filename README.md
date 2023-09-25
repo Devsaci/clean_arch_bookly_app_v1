@@ -110,3 +110,6 @@ https://github.com/tharwatsamy/my_bookly/commit/55dab84378d78c775b6f748bea719f80
 29. Add Custom image to book details view
 # add title to book details
 https://github.com/tharwatsamy/my_bookly/commit/a8ddec3d147cc6a66ab3449be1155e6efc319cba 30. Add title and subTitle to book details view
+# add rating to bool details
+https://github.com/tharwatsamy/my_bookly/commit/ecfb45928dfe551358abe1dbea83c82241408a14
+31. Add rating to book details
