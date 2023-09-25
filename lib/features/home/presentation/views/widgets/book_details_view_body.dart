@@ -13,7 +13,10 @@ class BookDetailsViewBody extends StatelessWidget {
       child: Column(
         children: [
           CustomBookDetailsAppBar(),
-          FeaturedListViewItem(),
+          Padding(
+            padding: EdgeInsets.all(20),
+            child: FeaturedListViewItem(),
+          ),
         ],
       ),
     );
