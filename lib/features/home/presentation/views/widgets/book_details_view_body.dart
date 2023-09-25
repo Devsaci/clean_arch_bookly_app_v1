@@ -25,6 +25,11 @@ class BookDetailsViewBody extends StatelessWidget {
             style: Styles.textStyle30.copyWith(fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 6),
+          Text(
+            'Rudyard Kipling',
+            style: Styles.textStyle18.copyWith(
+                fontStyle: FontStyle.italic, fontWeight: FontWeight.w500),
+          ),
         ],
       ),
     );
