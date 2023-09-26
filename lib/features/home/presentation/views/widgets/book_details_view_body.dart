@@ -53,7 +53,9 @@ class BooksAction extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Row(
       children: [
-        CustomButton(),
+        Expanded(
+          child: CustomButton(),
+        ),
       ],
     );
   }
