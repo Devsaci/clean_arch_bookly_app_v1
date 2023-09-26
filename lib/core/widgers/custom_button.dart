@@ -2,15 +2,16 @@ import 'package:clean_arch_bookly_app_v1/core/uttlls/styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({super.key});
+  const CustomButton({super.key, required this.backgroundColor});
 
+  final Color backgroundColor;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: 40,
       child: TextButton(
         style: TextButton.styleFrom(
-          backgroundColor: Colors.amber,
+          backgroundColor: backgroundColor,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16),
           ),
@@ -20,7 +21,7 @@ class CustomButton extends StatelessWidget {
           '19.99€',
           style: Styles.textStyle14.copyWith(
             color: Colors.black,
-            fontWeight: FontWeight.bold,
+            fontWeight: FontWeight.w900,
           ),
         ),
       ),

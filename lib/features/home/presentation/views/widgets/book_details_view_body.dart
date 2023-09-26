@@ -54,7 +54,9 @@ class BooksAction extends StatelessWidget {
     return const Row(
       children: [
         Expanded(
-          child: CustomButton(),
+          child: CustomButton(
+            backgroundColor: Colors.white,
+          ),
         ),
       ],
     );
