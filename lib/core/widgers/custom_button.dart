@@ -7,6 +7,7 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextButton(
+      style: TextButton.styleFrom(),
       onPressed: () {},
       child: Text(
         '19.99€',
