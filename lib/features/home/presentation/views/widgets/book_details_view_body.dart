@@ -38,8 +38,18 @@ class BookDetailsViewBody extends StatelessWidget {
           const BookRating(
             mainAxisAlignment: MainAxisAlignment.center,
           ),
+          const SizedBox(height: 37),
+          const BooksAction(),
         ],
       ),
     );
+  }
+}
+
+class BooksAction extends StatelessWidget {
+  const BooksAction({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return const Row();
   }
 }
