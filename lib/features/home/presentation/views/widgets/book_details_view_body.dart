@@ -56,6 +56,7 @@ class BooksAction extends StatelessWidget {
         Expanded(
           child: CustomButton(
             backgroundColor: Colors.white,
+            textColor: Colors.black,
           ),
         ),
       ],
