@@ -8,6 +8,7 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
       style: TextButton.styleFrom(
+        backgroundColor: Colors.amber,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
         ),
