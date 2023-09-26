@@ -51,12 +51,13 @@ class BooksAction extends StatelessWidget {
   const BooksAction({super.key});
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       children: [
         Expanded(
           child: CustomButton(
             backgroundColor: Colors.white,
             textColor: Colors.black,
+            borderRadius: BorderRadius.circular(16),
           ),
         ),
       ],
