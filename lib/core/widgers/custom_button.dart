@@ -11,7 +11,7 @@ class CustomButton extends StatelessWidget {
       child: Text(
         '19.99€',
         style: Styles.textStyle14.copyWith(
-          color: Colors.black,
+          color: Colors.white,
         ),
       ),
     );
