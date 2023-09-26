@@ -63,6 +63,16 @@ class BooksAction extends StatelessWidget {
             ),
           ),
         ),
+        Expanded(
+          child: CustomButton(
+            backgroundColor: Color.fromARGB(255, 201, 157, 23),
+            textColor: Colors.white,
+            borderRadius: BorderRadius.only(
+              topRight: Radius.circular(12),
+              bottomRight: Radius.circular(12),
+            ),
+          ),
+        ),
       ],
     );
   }
