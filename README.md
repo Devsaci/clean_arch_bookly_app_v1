@@ -116,3 +116,6 @@ https://github.com/tharwatsamy/my_bookly/commit/ecfb45928dfe551358abe1dbea83c822
 # create books action
 https://github.com/tharwatsamy/my_bookly/commit/3e71b17b24597e97fd7a93e57e6806aabd6390bf
 32. Create books button action
+# create similar books list view
+https://github.com/tharwatsamy/my_bookly/commit/193f956d3e814f25ef6281e8a3a8efd6982c8442
+33. Book details view done
