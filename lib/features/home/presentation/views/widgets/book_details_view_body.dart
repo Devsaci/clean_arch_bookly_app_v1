@@ -41,10 +41,14 @@ class BookDetailsViewBody extends StatelessWidget {
           ),
           const SizedBox(height: 37),
           const BooksAction(),
-          Text(
-            'You can also like',
-            style: Styles.textStyle14.copyWith(
-              fontWeight: FontWeight.w600,
+          const SizedBox(height: 50),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Text(
+              'You can also like',
+              style: Styles.textStyle14.copyWith(
+                fontWeight: FontWeight.w600,
+              ),
             ),
           ),
         ],
