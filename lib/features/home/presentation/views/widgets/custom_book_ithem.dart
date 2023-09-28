@@ -8,7 +8,7 @@ class CustumBookImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 2.8 / 4,
+      aspectRatio: 4.5 / 5,
       child: Container(
         //height: MediaQuery.of(context).size.height * .25,
         // width: 100,

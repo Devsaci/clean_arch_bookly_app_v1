@@ -21,10 +21,10 @@ class BookDetailsViewBody extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: width * .14),
             child: const CustumBookImage(),
           ),
-          const SizedBox(height: 43),
+          const SizedBox(height: 6),
           Text(
             'The Jungle Book',
-            style: Styles.textStyle30.copyWith(fontWeight: FontWeight.bold),
+            style: Styles.titleMedium.copyWith(fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 6),
           Opacity(
@@ -35,13 +35,13 @@ class BookDetailsViewBody extends StatelessWidget {
                   fontStyle: FontStyle.italic, fontWeight: FontWeight.w500),
             ),
           ),
-          const SizedBox(height: 18),
+          const SizedBox(height: 15),
           const BookRating(
             mainAxisAlignment: MainAxisAlignment.center,
           ),
-          const SizedBox(height: 37),
+          const SizedBox(height: 15),
           const BooksAction(),
-          const SizedBox(height: 50),
+          const SizedBox(height: 15),
           Align(
             alignment: Alignment.centerLeft,
             child: Text(
