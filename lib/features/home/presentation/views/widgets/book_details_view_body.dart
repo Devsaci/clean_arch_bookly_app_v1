@@ -51,8 +51,21 @@ class BookDetailsViewBody extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(height: 16),
+          const SimilarBooksListview(),
+          const SizedBox(height: 40),
         ],
       ),
     );
+  }
+}
+
+class SimilarBooksListview extends StatelessWidget {
+  const SimilarBooksListview({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    throw UnimplementedError();
   }
 }
