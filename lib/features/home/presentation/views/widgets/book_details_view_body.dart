@@ -41,6 +41,12 @@ class BookDetailsViewBody extends StatelessWidget {
           ),
           const SizedBox(height: 37),
           const BooksAction(),
+          Text(
+            'You can also like',
+            style: Styles.textStyle14.copyWith(
+              fontWeight: FontWeight.w600,
+            ),
+          ),
         ],
       ),
     );
