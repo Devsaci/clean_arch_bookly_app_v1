@@ -6,7 +6,7 @@ import 'package:dartz/dartz.dart';
 
 import '../repos/home_repo.dart';
 
-class FetchFeaturedBooksUseCase extends UseCase<List<BookEntity>> {
+class FetchFeaturedBooksUseCase extends UseCase<List<BookEntity>, NoParam> {
   final HomeRepo homeRepo;
 
   FetchFeaturedBooksUseCase(this.homeRepo);
@@ -29,6 +29,8 @@ class FetchFeaturedBooksUseCase extends UseCase<List<BookEntity>> {
   // }
 }
 
-abstract class UseCase<Type> {
+class NoParam {}
+
+abstract class UseCase<Type, Param> {
   Future<Either<Failure, Type>> call();
 }
