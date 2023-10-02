@@ -491,13 +491,14 @@ https://github.com/tharwatsamy/my_bookly/commit/60eb57228ebe8f096c5a12ab4e7044dc
 37. Home repo
 
 # create home repo methods and failure file
-https://github.com/tharwatsamy/my_bookly/commit/b909dfaf58f377bf9d4d658ac4c842f4e591cd9b
-38. Eithere class / create home repo methods and failure file
+add Either class
+https://github.com/tharwatsamy/clean_arch_bookly_app/commit/09713cee56341892aac2ceee04a85c601634ea95
+38. Eithere class 
 # 
 ///
 39. Use cases
-# 
-/
+# create fetch featuerd books use case
+https://github.com/tharwatsamy/clean_arch_bookly_app/commit/ff0cf6f7a2501e3210bf64a7ab8a7c733d45c7ff
 40. Fetch featured books use case
 
 
