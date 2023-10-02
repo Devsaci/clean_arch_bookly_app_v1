@@ -127,7 +127,7 @@ https://github.com/tharwatsamy/my_bookly/commit/193f956d3e814f25ef6281e8a3a8efd6
 
 
 # create book model
-https://github.com/tharwatsamy/my_bookly/commit/d8b462aafd32daf20360575ee4778d8ad29b34d0
+https://github.com/tharwatsamy/clean_arch_bookly_app/commit/52e0617ab5947cc0c51152df0f2c44261f72ab12
 
 36. Book entity
 # https://medium.com/@fakhiradevina/flutter-tdd-clean-architecture-272373727699
