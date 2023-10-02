@@ -6,12 +6,23 @@ import 'package:dartz/dartz.dart';
 
 import '../repos/home_repo.dart';
 
-class FetchFeaturedBooksUseCase {
+class FetchFeaturedBooksUseCase extends UseCase<Type> {
   final HomeRepo homeRepo;
 
   FetchFeaturedBooksUseCase(this.homeRepo);
-  Future<Either<Failure, List<BookEntity>>> fetchFeaturedBooks() {
-    // check permssion
-    return homeRepo.fetchFeaturedBooks();
+
+  @override
+  Future<Either<Failure, Type>> call() {
+    // TODO: implement call
+    throw UnimplementedError();
   }
+
+  // Future<Either<Failure, List<BookEntity>>> call() {
+  //   // check permssion
+  //   return homeRepo.fetchFeaturedBooks();
+  // }
+}
+
+abstract class UseCase<Type> {
+  Future<Either<Failure, Type>> call();
 }
