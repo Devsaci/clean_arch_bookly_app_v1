@@ -128,4 +128,361 @@ https://github.com/tharwatsamy/my_bookly/commit/193f956d3e814f25ef6281e8a3a8efd6
 
 # create book model
 https://github.com/tharwatsamy/my_bookly/commit/d8b462aafd32daf20360575ee4778d8ad29b34d0
+
 36. Book entity
+# https://medium.com/@fakhiradevina/flutter-tdd-clean-architecture-272373727699
+Flutter TDD Clean Architecture
+Three years studying computer science has taught me not only to put things on the code and be grateful if it works, but also to make sure the code I write today won’t hurt my eyes in the future. Just like in this pandemic time, it’s always necessary to clean your code (and hands!).
+
+There are so much to learn about clean code. You can read it all on uncle Bob’s book, one thing to be highlighted for this article is to separate code into independent layers and depend on abstractions instead of concrete implementations. This article is going to explain the implementation of the flutter clean architecture in my current project bisaGo.
+Implementing Reso Coder’s Clean Architecture
+As you can see from the picture above, there are 3 layers of the architecture: Data, Domain, and Presentation. Each of them has its’ purpose and only can interact like the flow above; Data and Presentation can only talk to each other with the help of Domain. It’s pretty straight forward but still a bit abstract if we don’t implement it.
+
+I’m going to give an example of implementing Search Location feature. Locations provided by the application are gathered in remote sources (REST API). When user clicked one of the location, the application needs to remember the past clicked location by retrieving the list from cookies.
+
+1. Data
+The Data layer consists of repository and data models. Repository is where the application gather all data related to the use case, either from local sources (Local DB, cookies) or remote sources (remote API). Data from the sources, usually in json format, is parsed to Dart object called models. It’s need to be done to make sure the application knows what data and variable it’s expecting.
+
+So I created the LokasiRepository to gather all the data from different resources. Data from API is gathered with the fetchLokasi() function, and Data from cookie is gathered with the fetchRecentSearch() function.
+import 'dart:convert';
+
+import 'package:ppl_disabilitas/model/lokasi.dart';
+import 'package:ppl_disabilitas/network/cookies_interface.dart';
+import 'package:ppl_disabilitas/network/network_interface.dart';
+
+class LokasiRepository {
+  final _network = NetworkInterface();
+  final _cookie = CookiesInterface();
+  Future<LokasiListResponse> fetchLokasi() async {
+    final response = await _network.get(
+        url: 'https://my.api.mockaroo.com/mall.json?key=dbcde960',
+        isLogin: false);
+    return LokasiListResponse(
+        response.map<Lokasi>((lokasi) => Lokasi.fromJson(lokasi)).toList());
+  }
+
+  Future<LokasiListResponse> fetchRecentSearch() async {
+    var response;
+    await _cookie
+        .checkCookieFileAvailability(fileName: "searchhistory")
+        .then((boolean) async {
+      if (!boolean) {
+        response = [];
+      } else {
+        try {
+          await _cookie.getCookieFile(fileName: "searchhistory").then((cookie) {
+            response = json.decode(cookie);
+          });
+        } on Exception{
+          response = [];
+        }
+      }
+    });
+    return LokasiListResponse(
+        response.map<Lokasi>((lokasi) => Lokasi.fromJson(lokasi)).toList());
+  }
+}
+As you can see in line 14–15 and 35–36, all the functions return an object called LokasiListResponse that was made by the json data containing list of locations. Flutter makes it easier by using the Json Serializable package. You just have to create a model class consists of variables based on the data from the source, and then the package will generate a .g.dart file for you.
+import 'package:json_annotation/json_annotation.dart';
+part 'lokasi.g.dart';
+@JsonSerializable()
+class LokasiListResponse {
+  List<Lokasi> listLokasi;
+
+  LokasiListResponse(this.listLokasi);
+}
+
+@JsonSerializable(nullable: true)
+class Lokasi {
+  String nama;
+  double latitude;
+  double longitude;
+  String alamat;
+  String foto;
+  String telepon;
+
+  Lokasi();
+
+  factory Lokasi.fromJson(Map<String, dynamic> json) => _$LokasiFromJson(json);
+  Map<String, dynamic> toJson() => _$LokasiToJson(this);
+}
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'lokasi.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+LokasiListResponse _$LokasiListResponseFromJson(Map<String, dynamic> json) {
+  return LokasiListResponse(
+    (json['listLokasi'] as List)
+        ?.map((e) =>
+            e == null ? null : Lokasi.fromJson(e as Map<String, dynamic>))
+        ?.toList(),
+  );
+}
+
+Map<String, dynamic> _$LokasiListResponseToJson(LokasiListResponse instance) =>
+    <String, dynamic>{
+      'listLokasi': instance.listLokasi,
+    };
+
+Lokasi _$LokasiFromJson(Map<String, dynamic> json) {
+  return Lokasi()
+    ..nama = json['nama'] as String
+    ..latitude = (json['latitude'] as num)?.toDouble()
+    ..longitude = (json['longitude'] as num)?.toDouble()
+    ..alamat = json['alamat'] as String
+    ..foto = json['foto'] as String
+    ..telepon = json['telepon'] as String;
+}
+
+Map<String, dynamic> _$LokasiToJson(Lokasi instance) => <String, dynamic>{
+      'nama': instance.nama,
+      'latitude': instance.latitude,
+      'longitude': instance.longitude,
+      'alamat': instance.alamat,
+      'foto': instance.foto,
+      'telepon': instance.telepon,
+    };
+
+
+2. Domain
+Domain is the inner layer which shouldn’t be susceptible to the whims of changing data sources or porting our app to Angular Dart. It will contain only the core business logic (use cases) and business objects (entities).
+
+Repository classes act as the Data Layer and Domain Layer, each function on the repository class acts as the domain layer that specifies the use cases of the feature.
+
+
+3. Presentation
+Presentation is where the UI goes. You obviously need widgets to display something on the screen. These widgets is controlled by the state using various state management design pattern used in Flutter. In this project, I use BLoC as the state management.
+
+BLoC allows us to know exactly what data is given to the state. There is BLoC implementation that uses event classes to easily predict what state is the application in, but I use the simpler implementation of BLoC (just using streams) to shorten times for other that hasn’t been familiar to BLoC before. But I won’t dive too deep on BLoC because it’s another thing to write (but if you are curious you can read it here).
+
+Something that I want to point out is about using Stream. Stream allows your application to run asynchronously. Imagine stream as a river and the data is the water, so you can always add more data, or in this case, state, and stream will send the data to your UI using StreamBuilder. You don’t just add data to the stream, but you add the data to the streams’ sink.
+import 'dart:async';
+
+import 'package:ppl_disabilitas/model/lokasi.dart';
+import 'package:ppl_disabilitas/network/data/network_model.dart';
+import 'package:ppl_disabilitas/repository/LokasiRepository.dart';
+
+class LokasiResponseBloc {
+  StreamController _recentSearchController;
+  LokasiRepository _lokasiRepository;
+  StreamController _lokasiListController;
+
+  StreamSink<NetworkModel<LokasiListResponse>> get recentSearchSink =>
+      _recentSearchController.sink;
+  Stream<NetworkModel<LokasiListResponse>> get recentSearchStream =>
+      _recentSearchController.stream;
+
+  StreamSink<NetworkModel<LokasiListResponse>> get lokasiListSink =>
+      _lokasiListController.sink;
+  Stream<NetworkModel<LokasiListResponse>> get lokasiListStream =>
+      _lokasiListController.stream;
+
+  LokasiResponseBloc() {
+    _lokasiListController =
+        StreamController<NetworkModel<LokasiListResponse>>();
+    _recentSearchController = StreamController<NetworkModel<LokasiListResponse>>();
+    _lokasiRepository = LokasiRepository();
+    fetchLokasiList();
+    fetchRecentSearch();
+  }
+
+  fetchLokasiList() async {
+    lokasiListSink.add(NetworkModel.loading('Getting Locations'));
+    try {
+      final lokasiListResponse =
+          await _lokasiRepository.fetchLokasi();
+      lokasiListSink.add(NetworkModel.completed(lokasiListResponse));
+    } catch (e) {
+      lokasiListSink.add(NetworkModel.error(e.toString()));
+    }
+  }
+
+  fetchRecentSearch() async {
+    recentSearchSink.add(NetworkModel.loading('Getting Recent Search'));
+    try {
+      final recentSearchData = await _lokasiRepository.fetchRecentSearch();
+      recentSearchSink.add(NetworkModel.completed(recentSearchData));
+    } catch (e) {
+      recentSearchSink.add(NetworkModel.error(e.toString()));
+    }
+  }
+
+  saveRecentSearch(Lokasi search) async {
+    await _lokasiRepository.saveRecentSearch(search);
+  }
+
+  dispose() {
+    _recentSearchController?.close();
+    _lokasiListController?.close();
+  }
+}
+
+class Pencarian extends StatefulWidget {
+  @override
+  PencarianState createState() => PencarianState();
+}
+
+/// State of Pencacrian page
+class PencarianState extends State<Pencarian> {
+  /// Controller for textFormField
+  TextEditingController myController = TextEditingController();
+
+  /// Search Icon for textFormField
+  Icon searchIcon = Icon(Icons.search);
+
+  /// Text for appbar
+  Widget appBarText = Text('Pencarian Lokasi');
+
+  /// List of places currently searched on the textFormField
+  List<Lokasi> currentSearch = [];
+
+  /// List for places from API
+  List<Lokasi> places = [];
+
+  /// BLoC for pencarian
+  LokasiResponseBloc _bloc = LokasiResponseBloc();
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: greenPrimary,
+        leading: IconButton(
+            icon: Icon(Icons.arrow_back_ios, size: 25),
+            key: Key('Back Icon Key'),
+            onPressed: () => Navigator.pop(context, 'Take me back')),
+        title: Container(
+          margin: EdgeInsets.only(top: doubleSpace, bottom: doubleSpace),
+          decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: doubleBorderRadius,
+              boxShadow: regularShadow),
+          child: TextFormField(
+            controller: myController,
+            key: Key('Text Field Mau Kemana'),
+            decoration: InputDecoration(
+                contentPadding: EdgeInsets.all(0),
+                isDense: false,
+                prefixIcon: Icon(
+                  Icons.search,
+                  color: greenPrimary,
+                  size: 25,
+                ),
+                border: InputBorder.none,
+                fillColor: Colors.white,
+                labelText: 'Kamu mau kemana?',
+                labelStyle: TextStyle(
+                    color: greenPrimary,
+                    fontSize: 18,
+                    fontFamily: 'Muli',
+                    fontWeight: FontWeight.w700),
+                suffixIcon: IconButton(
+                  icon: Icon(
+                    Icons.mic,
+                    color: greenPrimary,
+                    size: 25,
+                  ),
+                  onPressed: () {},
+                )),
+          ),
+        ),
+      ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          StreamBuilder<NetworkModel<LokasiListResponse>>(
+            stream: _bloc.recentSearchStream,
+            builder: (context, snapshot) {
+              if (snapshot.hasData) {
+                switch (snapshot.data.status) {
+                  case Status.LOADING:
+                    return Center(
+                      child: CircularProgressIndicator(
+                        valueColor: AlwaysStoppedAnimation<Color>(greenPrimary),
+                      ),
+                    );
+                    break;
+                  case Status.COMPLETED:
+                    final recentSearch = snapshot.data.data;
+                    Widget displayWidget;
+                    if (recentSearch.listLokasi.isEmpty) {
+                      displayWidget = Center(
+                          child: Text("Anda belum pernah melakukan pencarian"));
+                    } else {
+                      displayWidget = makeLokasiWidget(
+                          "history", recentSearch.listLokasi.take(3).toList());
+                    }
+                    return Expanded(
+                        child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Container(
+                            margin: EdgeInsets.all(doubleSpace),
+                            child: Text(
+                              "Pencarian terdahulu",
+                              style:
+                                  TextStyle(fontFamily: 'Muli', fontSize: 15),
+                            )),
+                        Flexible(child: displayWidget),
+                      ],
+                    ));
+                    break;
+                  case Status.ERROR:
+                    return Center(
+                      child: Text("${snapshot.data.status}"),
+                    );
+                    break;
+                }
+              }
+              return Container();
+            },
+          ),
+          Container(
+            margin: EdgeInsets.only(
+                left: doubleSpace, top: regularSpace, bottom: smallSpace),
+            child: Text("Hasil Pencarian"),
+          ),
+          StreamBuilder<NetworkModel<LokasiListResponse>>(
+            stream: _bloc.lokasiListStream,
+            builder: (context, snapshot) {
+              if (snapshot.hasData) {
+                switch (snapshot.data.status) {
+                  case Status.LOADING:
+                    return Center(
+                      child: CircularProgressIndicator(
+                        valueColor: AlwaysStoppedAnimation<Color>(greenPrimary),
+                      ),
+                    );
+                    break;
+                  case Status.COMPLETED:
+                    places = snapshot.data.data.listLokasi;
+                    return Expanded(
+                        flex: 2,
+                        child: currentSearch.isEmpty
+                            ? Center(child: Text('Cari lokasi'))
+                            : makeLokasiWidget("api", currentSearch));
+                    break;
+                  case Status.ERROR:
+                    return Center(
+                      child: Text(snapshot.data.data.toString()),
+                    );
+                    break;
+                }
+              }
+              return Container();
+            },
+          ),
+        ],
+      ),
+    );
+  }
+}
+References
+https://www.youtube.com/watch?v=KjE2IDphA_U
+
+ 
