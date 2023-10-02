@@ -119,3 +119,13 @@ https://github.com/tharwatsamy/my_bookly/commit/3e71b17b24597e97fd7a93e57e6806aa
 # create similar books list view
 https://github.com/tharwatsamy/my_bookly/commit/193f956d3e814f25ef6281e8a3a8efd6982c8442
 33. Book details view done
+
+#  
+#  
+# 
+# 
+
+
+# create book model
+https://github.com/tharwatsamy/my_bookly/commit/d8b462aafd32daf20360575ee4778d8ad29b34d0
+36. Book entity
