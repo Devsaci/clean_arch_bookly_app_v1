@@ -490,7 +490,9 @@ https://www.youtube.com/watch?v=KjE2IDphA_U
 https://github.com/tharwatsamy/my_bookly/commit/60eb57228ebe8f096c5a12ab4e7044dc6f2a00ab
 37. Home repo
 
-
+# create home repo methods and failure file
+https://github.com/tharwatsamy/my_bookly/commit/b909dfaf58f377bf9d4d658ac4c842f4e591cd9b
+38. Eithere class / create home repo methods and failure file
 
 
  
