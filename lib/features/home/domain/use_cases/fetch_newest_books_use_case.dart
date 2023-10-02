@@ -7,7 +7,7 @@ import '../entities/book_entitiy.dart';
 
 class FetchNewestdBooksUseCase extends UseCase<List<BookEntity>, NoParam> {
   @override
-  Future<Either<Failure, List<BookEntity>>> call() {
+  Future<Either<Failure, List<BookEntity>>> call([NoParam? param]) {
     // TODO: implement call
     throw UnimplementedError();
   }
