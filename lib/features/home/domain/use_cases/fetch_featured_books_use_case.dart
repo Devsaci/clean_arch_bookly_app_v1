@@ -4,5 +4,7 @@ class FetchFeaturedBooksUseCase {
   final HomeRepo homeRepo;
 
   FetchFeaturedBooksUseCase(this.homeRepo);
-  fetchFeaturedBooks() {}
+  fetchFeaturedBooks() {
+    return homeRepo.fetchFeaturedBooks();
+  }
 }
