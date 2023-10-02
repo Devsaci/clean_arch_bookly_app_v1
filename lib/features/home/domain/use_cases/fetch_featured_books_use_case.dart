@@ -11,6 +11,7 @@ class FetchFeaturedBooksUseCase {
 
   FetchFeaturedBooksUseCase(this.homeRepo);
   Future<Either<Failure, List<BookEntity>>> fetchFeaturedBooks() {
+    // check permssion
     return homeRepo.fetchFeaturedBooks();
   }
 }
