@@ -4,6 +4,7 @@ import 'package:clean_arch_bookly_app_v1/features/home/domain/entities/book_enti
 
 import 'package:dartz/dartz.dart';
 
+import '../../../../core/use_case/use_case.dart';
 import '../repos/home_repo.dart';
 
 class FetchFeaturedBooksUseCase extends UseCase<List<BookEntity>, NoParam> {
@@ -15,27 +16,4 @@ class FetchFeaturedBooksUseCase extends UseCase<List<BookEntity>, NoParam> {
   Future<Either<Failure, List<BookEntity>>> call([NoParam? param]) async {
     return await homeRepo.fetchFeaturedBooks();
   }
-
-  // @override
-  // Future<Either<Failure, List<BookEntity>>> call() {
-  //   // TODO: implement call
-  //   throw UnimplementedError();
-  // }
-
-  // @override
-  // Future<Either<Failure, Type>> call() {
-  //   // TODO: implement call
-  //   throw UnimplementedError();
-  // }
-
-  // Future<Either<Failure, List<BookEntity>>> call() {
-  //   // check permssion
-  //   return homeRepo.fetchFeaturedBooks();
-  // }
-}
-
-class NoParam {}
-
-abstract class UseCase<Type, Param> {
-  Future<Either<Failure, Type>> call();
 }
