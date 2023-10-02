@@ -500,7 +500,9 @@ https://github.com/tharwatsamy/clean_arch_bookly_app/commit/09713cee56341892aac2
 # create fetch featuerd books use case
 https://github.com/tharwatsamy/clean_arch_bookly_app/commit/ff0cf6f7a2501e3210bf64a7ab8a7c733d45c7ff
 40. Fetch featured books use case
-
+# refactor to use case class
+https://github.com/tharwatsamy/clean_arch_bookly_app/commit/b01776a74d33fdf47f56116df7b6d0fd46ebd5ca
+41. Generic use case
 
 
  
