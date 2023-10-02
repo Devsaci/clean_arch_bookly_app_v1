@@ -503,6 +503,9 @@ https://github.com/tharwatsamy/clean_arch_bookly_app/commit/ff0cf6f7a2501e3210bf
 # refactor to use case class
 https://github.com/tharwatsamy/clean_arch_bookly_app/commit/b01776a74d33fdf47f56116df7b6d0fd46ebd5ca
 41. Generic use case
+# fetch newest books use case
+https://github.com/tharwatsamy/clean_arch_bookly_app/commit/71e1a035ec892c51c0aa6681b548d210f7532be7
+42. Fetch newest books use case
 
 
  
