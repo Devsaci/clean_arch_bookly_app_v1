@@ -496,6 +496,9 @@ https://github.com/tharwatsamy/my_bookly/commit/b909dfaf58f377bf9d4d658ac4c842f4
 # 
 ///
 39. Use cases
+# 
+/
+40. Fetch featured books use case
 
 
 
