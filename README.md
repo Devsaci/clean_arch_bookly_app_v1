@@ -511,4 +511,6 @@ https://github.com/tharwatsamy/clean_arch_bookly_app/commit/5001410d7775b36a173a
 44. Book model
 Install Json to Dart Model Extension.
 
+
+
  
