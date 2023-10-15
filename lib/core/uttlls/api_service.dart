@@ -6,6 +6,6 @@ class ApiService {
 
   ApiService(this._dio);
   get({required String endPoint}) {
-    _dio.get('path');
+    _dio.get('$baseUrl$endPoint');
   }
 }
