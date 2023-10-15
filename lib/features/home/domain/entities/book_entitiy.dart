@@ -6,6 +6,7 @@ class BookEntity {
   final String bookId;
   @HiveField(1)
   final String? image;
+  @HiveField(2)
   final String title;
   final String? authorName;
   final num? price;
