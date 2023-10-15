@@ -516,7 +516,7 @@ Install Json to Dart Model Extension.
 46. Book model part 3
 # 
 47. Remote and local data source
-#
-47. Remote and local data source
-47. Remote and local data source
+# create home remote data source
+https://github.com/tharwatsamy/clean_arch_bookly_app/commit/8f58336adbc89bb642efeabd0bd3732df8aeb26c
+49. Home remote data source
  
