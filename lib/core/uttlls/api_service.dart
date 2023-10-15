@@ -5,7 +5,7 @@ class ApiService {
   final baseUrl = "https://www.googleapis.com/books/v1/";
 
   ApiService(this._dio);
-  get({required String endPoint}) {
-    _dio.get('$baseUrl$endPoint');
+  get({required String endPoint}) async {
+    await _dio.get('$baseUrl$endPoint');
   }
 }
