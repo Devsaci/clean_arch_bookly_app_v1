@@ -1,0 +1,828 @@
+{
+    "kind": "books#volumes",
+    "totalItems": 2882,
+    "items": [
+        {
+            "kind": "books#volume",
+            "id": "qAOhDwAAQBAJ",
+            "etag": "rPvv704ia/w",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/qAOhDwAAQBAJ",
+            "volumeInfo": {
+                "title": "The Rust Programming Language (Covers Rust 2018)",
+                "authors": [
+                    "Steve Klabnik",
+                    "Carol Nichols"
+                ],
+                "publisher": "No Starch Press",
+                "publishedDate": "2019-09-03",
+                "description": "The official book on the Rust programming language, written by the Rust development team at the Mozilla Foundation, fully updated for Rust 2018. The Rust Programming Language is the official book on Rust: an open source systems programming language that helps you write faster, more reliable software. Rust offers control over low-level details (such as memory usage) in combination with high-level ergonomics, eliminating the hassle traditionally associated with low-level languages. The authors of The Rust Programming Language, members of the Rust Core Team, share their knowledge and experience to show you how to take full advantage of Rust's features--from installation to creating robust and scalable programs. You'll begin with basics like creating functions, choosing data types, and binding variables and then move on to more advanced concepts, such as: Ownership and borrowing, lifetimes, and traits Using Rust's memory safety guarantees to build fast, safe programs Testing, error handling, and effective refactoring Generics, smart pointers, multithreading, trait objects, and advanced pattern matching Using Cargo, Rust's built-in package manager, to build, test, and document your code and manage dependencies How best to use Rust's advanced compiler with compiler-led programming techniques You'll find plenty of code examples throughout the book, as well as three chapters dedicated to building complete projects to test your learning: a number guessing game, a Rust implementation of a command line tool, and a multithreaded server. New to this edition: An extended section on Rust macros, an expanded chapter on modules, and appendixes on Rust development tools and editions.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781718500457"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1718500459"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": false
+                },
+                "pageCount": 561,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.4.3.0.preview.2",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=qAOhDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=qAOhDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=qAOhDwAAQBAJ&printsec=frontcover&dq=prohramming&hl=&cd=1&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=qAOhDwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=qAOhDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 23.99,
+                    "currencyCode": "USD"
+                },
+                "retailPrice": {
+                    "amount": 23.99,
+                    "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=qAOhDwAAQBAJ&rdid=book-qAOhDwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 23990000,
+                            "currencyCode": "USD"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 23990000,
+                            "currencyCode": "USD"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=qAOhDwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "New to this edition: An extended section on Rust macros, an expanded chapter on modules, and appendixes on Rust development tools and editions."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "rOCfDwAAQBAJ",
+            "etag": "JZu/ndS/lpI",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/rOCfDwAAQBAJ",
+            "volumeInfo": {
+                "title": "Elements of Programming",
+                "authors": [
+                    "Alexander Stepanov",
+                    "Paul McJones"
+                ],
+                "publisher": "Lulu.com",
+                "publishedDate": "2019-06-27",
+                "description": "Elements of Programming provides a different understanding of programming than is presented elsewhere. Its major premise is that practical programming, like other areas of science and engineering, must be based on a solid mathematical foundation. The book shows that algorithms implemented in a real programming language, such as C++, can operate in the most general mathematical setting. For example, the fast exponentiation algorithm is defined to work with any associative operation. Using abstract algorithms leads to efficient, reliable, secure, and economical software.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9780578222141"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "0578222140"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 282,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.0.1.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=rOCfDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=rOCfDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=rOCfDwAAQBAJ&printsec=frontcover&dq=prohramming&hl=&cd=2&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=rOCfDwAAQBAJ&dq=prohramming&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Elements_of_Programming.html?hl=&id=rOCfDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Elements_of_Programming-sample-pdf.acsm?id=rOCfDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=rOCfDwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "This book shows that algorithms implemented in a real programming language, such as C++, can operate in the most general mathematical setting. For example, the fast exponentiation algorithm is defined to work with any associative operation."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "u13hVoYVZa8C",
+            "etag": "JNRcHA8f5vQ",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/u13hVoYVZa8C",
+            "volumeInfo": {
+                "title": "Planning Extreme Programming",
+                "authors": [
+                    "Kent Beck",
+                    "Martin Fowler"
+                ],
+                "publisher": "Addison-Wesley Professional",
+                "publishedDate": "2001",
+                "description": "Without careful ongoing planning, the software development process can fall apart. Extreme Programming (XP) is a new programming discipline, or methodology, that is geared toward the way that the vast majority of software development projects are handled -- in small teams. In this new book, noted software engineers Kent Beck and Martin Fowler show the reader how to properly plan a software development project with XP in mind. The authors lay out a proven strategy that forces the reader to plan as their software project unfolds, and therefore avoid many of the nasty problems that can potentially spring up along the way.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "0201710919"
+                    },
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9780201710915"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 162,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "averageRating": 4,
+                "ratingsCount": 6,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.2.4.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=u13hVoYVZa8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=u13hVoYVZa8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=u13hVoYVZa8C&printsec=frontcover&dq=prohramming&hl=&cd=3&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=u13hVoYVZa8C&dq=prohramming&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Planning_Extreme_Programming.html?hl=&id=u13hVoYVZa8C"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=u13hVoYVZa8C&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "In this new book, noted software engineers Kent Beck and Martin Fowler show the reader how to properly plan a software development project with XP in mind."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "y6FLBQAAQBAJ",
+            "etag": "ItoAgVrZjKU",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/y6FLBQAAQBAJ",
+            "volumeInfo": {
+                "title": "Elements of Programming Interviews",
+                "subtitle": "The Insiders' Guide",
+                "authors": [
+                    "Adnan Aziz",
+                    "Tsung-Hsien Lee",
+                    "Amit Prakash"
+                ],
+                "publisher": "EPI",
+                "publishedDate": "2012-10-11",
+                "description": "The core of EPI is a collection of over 300 problems with detailed solutions, including 100 figures, 250 tested programs, and 150 variants. The problems are representative of questions asked at the leading software companies. The book begins with a summary of the nontechnical aspects of interviewing, such as common mistakes, strategies for a great interview, perspectives from the other side of the table, tips on negotiating the best offer, and a guide to the best ways to use EPI. The technical core of EPI is a sequence of chapters on basic and advanced data structures, searching, sorting, broad algorithmic principles, concurrency, and system design. Each chapter consists of a brief review, followed by a broad and thought-provoking series of problems. We include a summary of data structure, algorithm, and problem solving patterns.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781479274833"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1479274836"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 504,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "averageRating": 5,
+                "ratingsCount": 2,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "4.15.7.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=y6FLBQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=y6FLBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=y6FLBQAAQBAJ&printsec=frontcover&dq=prohramming&hl=&cd=4&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=y6FLBQAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=y6FLBQAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 39.95,
+                    "currencyCode": "USD"
+                },
+                "retailPrice": {
+                    "amount": 39.95,
+                    "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=y6FLBQAAQBAJ&rdid=book-y6FLBQAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 39950000,
+                            "currencyCode": "USD"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 39950000,
+                            "currencyCode": "USD"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Elements_of_Programming_Interviews-sample-pdf.acsm?id=y6FLBQAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=y6FLBQAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "The book begins with a summary of the nontechnical aspects of interviewing, such as common mistakes, strategies for a great interview, perspectives from the other side of the table, tips on negotiating the best offer, and a guide to the ..."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "b-2oDwAAQBAJ",
+            "etag": "h6ZtyijD92Y",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/b-2oDwAAQBAJ",
+            "volumeInfo": {
+                "title": "Python Programming in Context",
+                "authors": [
+                    "Bradley N. Miller",
+                    "David L. Ranum",
+                    "Julie Anderson"
+                ],
+                "publisher": "Jones & Bartlett Learning",
+                "publishedDate": "2019-10-01",
+                "description": "Python Programming in Context, Third Edition provides a comprehensive and accessible introduction to Python fundamentals. Updated with the latest version of Python, the new Third Edition offers a thorough overview of multiple applied areas, including image processing, cryptography, astronomy, the Internet, and bioinformatics. Taking an active learning approach, each chapter starts with a comprehensive real-world project that teaches core design techniques and Python programming while engaging students. An ideal first language for learners entering the rapidly expanding field of computer science, Python gives students a solid platform of key problem-solving skills that translate easily across programming languages.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781284175554"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1284175553"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 516,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.1.1.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=b-2oDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=b-2oDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=b-2oDwAAQBAJ&printsec=frontcover&dq=prohramming&hl=&cd=5&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=b-2oDwAAQBAJ&dq=prohramming&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Python_Programming_in_Context.html?hl=&id=b-2oDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Python_Programming_in_Context-sample-pdf.acsm?id=b-2oDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=b-2oDwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Updated with the latest version of Python, the new Third Edition offers a thorough overview of multiple applied areas, including image processing, cryptography, astronomy, the Internet, and bioinformatics."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "YXQsDwAAQBAJ",
+            "etag": "ktXR1wCpJzc",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/YXQsDwAAQBAJ",
+            "volumeInfo": {
+                "title": "Coding Literacy",
+                "subtitle": "How Computer Programming Is Changing Writing",
+                "authors": [
+                    "Annette Vee"
+                ],
+                "publisher": "MIT Press",
+                "publishedDate": "2017-07-28",
+                "description": "How the theoretical tools of literacy help us understand programming in its historical, social and conceptual contexts. The message from educators, the tech community, and even politicians is clear: everyone should learn to code. To emphasize the universality and importance of computer programming, promoters of coding for everyone often invoke the concept of “literacy,” drawing parallels between reading and writing code and reading and writing text. In this book, Annette Vee examines the coding-as-literacy analogy and argues that it can be an apt rhetorical frame. The theoretical tools of literacy help us understand programming beyond a technical level, and in its historical, social, and conceptual contexts. Viewing programming from the perspective of literacy and literacy from the perspective of programming, she argues, shifts our understandings of both. Computer programming becomes part of an array of communication skills important in everyday life, and literacy, augmented by programming, becomes more capacious. Vee examines the ways that programming is linked with literacy in coding literacy campaigns, considering the ideologies that accompany this coupling, and she looks at how both writing and programming encode and distribute information. She explores historical parallels between writing and programming, using the evolution of mass textual literacy to shed light on the trajectory of code from military and government infrastructure to large-scale businesses to personal use. Writing and coding were institutionalized, domesticated, and then established as a basis for literacy. Just as societies demonstrated a “literate mentality” regardless of the literate status of individuals, Vee argues, a “computational mentality” is now emerging even though coding is still a specialized skill.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9780262036245"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "026203624X"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 375,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "1.3.3.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=YXQsDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=YXQsDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=YXQsDwAAQBAJ&printsec=frontcover&dq=prohramming&hl=&cd=6&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=YXQsDwAAQBAJ&dq=prohramming&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Coding_Literacy.html?hl=&id=YXQsDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Coding_Literacy-sample-pdf.acsm?id=YXQsDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=YXQsDwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "In this book, Annette Vee examines the coding-as-literacy analogy and argues that it can be an apt rhetorical frame."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "l4zO3OWkdIsC",
+            "etag": "lvOGsjvko3s",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/l4zO3OWkdIsC",
+            "volumeInfo": {
+                "title": "Extreme Programming Installed",
+                "authors": [
+                    "Ron Jeffries",
+                    "Ann Anderson",
+                    "Chet Hendrickson"
+                ],
+                "publisher": "Addison-Wesley Professional",
+                "publishedDate": "2001",
+                "description": "Extreme Programming Installed explains the core principles of Extreme Programming and details each step in the XP development cycle. This book conveys the essence of the XP approach--techniques for implementation, obstacles likely to be encountered, and experience-based advice for successful execution.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "0201708426"
+                    },
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9780201708424"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": false
+                },
+                "pageCount": 290,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "averageRating": 3,
+                "ratingsCount": 4,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.2.4.0.preview.2",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=l4zO3OWkdIsC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=l4zO3OWkdIsC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=l4zO3OWkdIsC&dq=prohramming&hl=&cd=7&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=l4zO3OWkdIsC&dq=prohramming&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Extreme_Programming_Installed.html?hl=&id=l4zO3OWkdIsC"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=l4zO3OWkdIsC&hl=&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "This book conveys the essence of the XP approach--techniques for implementation, obstacles likely to be encountered, and experience-based advice for successful execution."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "yB1WwURwBUQC",
+            "etag": "A97b5x0dOwY",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/yB1WwURwBUQC",
+            "volumeInfo": {
+                "title": "Masterminds of Programming",
+                "subtitle": "Conversations with the Creators of Major Programming Languages",
+                "authors": [
+                    "Federico Biancuzzi",
+                    "Chromatic"
+                ],
+                "publisher": "\"O'Reilly Media, Inc.\"",
+                "publishedDate": "2009-03-21",
+                "description": "Masterminds of Programming features exclusive interviews with the creators of several historic and highly influential programming languages. In this unique collection, you'll learn about the processes that led to specific design decisions, including the goals they had in mind, the trade-offs they had to make, and how their experiences have left an impact on programming today. Masterminds of Programming includes individual interviews with: Adin D. Falkoff: APL Thomas E. Kurtz: BASIC Charles H. Moore: FORTH Robin Milner: ML Donald D. Chamberlin: SQL Alfred Aho, Peter Weinberger, and Brian Kernighan: AWK Charles Geschke and John Warnock: PostScript Bjarne Stroustrup: C++ Bertrand Meyer: Eiffel Brad Cox and Tom Love: Objective-C Larry Wall: Perl Simon Peyton Jones, Paul Hudak, Philip Wadler, and John Hughes: Haskell Guido van Rossum: Python Luiz Henrique de Figueiredo and Roberto Ierusalimschy: Lua James Gosling: Java Grady Booch, Ivar Jacobson, and James Rumbaugh: UML Anders Hejlsberg: Delphi inventor and lead developer of C# If you're interested in the people whose vision and hard work helped shape the computer industry, you'll find Masterminds of Programming fascinating.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "0596555504"
+                    },
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9780596555504"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 496,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "averageRating": 4,
+                "ratingsCount": 3,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "0.7.6.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=yB1WwURwBUQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=yB1WwURwBUQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=yB1WwURwBUQC&printsec=frontcover&dq=prohramming&hl=&cd=8&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=yB1WwURwBUQC&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=yB1WwURwBUQC"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 23.99,
+                    "currencyCode": "USD"
+                },
+                "retailPrice": {
+                    "amount": 23.99,
+                    "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=yB1WwURwBUQC&rdid=book-yB1WwURwBUQC&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 23990000,
+                            "currencyCode": "USD"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 23990000,
+                            "currencyCode": "USD"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true
+                },
+                "pdf": {
+                    "isAvailable": true
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=yB1WwURwBUQC&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "In this unique collection, you&#39;ll learn about the processes that led to specific design decisions, including the goals they had in mind, the trade-offs they had to make, and how their experiences have left an impact on programming today."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "OJwXEAAAQBAJ",
+            "etag": "uuBum4+xRk0",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/OJwXEAAAQBAJ",
+            "volumeInfo": {
+                "title": "Beginning Rust Programming",
+                "authors": [
+                    "Ric Messier"
+                ],
+                "publisher": "John Wiley & Sons",
+                "publishedDate": "2021-03-09",
+                "description": "Quickly learn the ropes with the Rust programming language using this practical, step-by-step guide In Beginning Rust Programming, accomplished programmer and author Ric Messier delivers a highly practical, real-world guide to coding with Rust. Avoiding dry, theoretical content and “Hello, world”-type tutorials of questionable utility, the book dives immediately into functional Rust programming that takes advantage of the language’s blazing speed and memory efficiency. Designed from the ground up to give you a running start to using the multiparadigm system programming language, this book will teach you to: Solve real-world computer science problems of practical importance Use Rust’s rich type system and ownership model to guarantee memory-safety and thread-safety Integrate Rust with other programming languages and use it for embedded devices Perfect for programmers with some experience in other languages, like C or C++, Beginning Rust Programming is also a great pick for students new to programming and seeking a user-friendly and robust language with which to start their coding career.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781119712978"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1119712971"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 416,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.1.1.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=OJwXEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=OJwXEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=OJwXEAAAQBAJ&printsec=frontcover&dq=prohramming&hl=&cd=9&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=OJwXEAAAQBAJ&dq=prohramming&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Beginning_Rust_Programming.html?hl=&id=OJwXEAAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Beginning_Rust_Programming-sample-pdf.acsm?id=OJwXEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=OJwXEAAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Designed from the ground up to give you a running start to using the multiparadigm system programming language, this book will teach you to: Solve real-world computer science problems of practical importance Use Rust’s rich type system ..."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "ObNQAAAAMAAJ",
+            "etag": "KRNv4Y6v0FM",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/ObNQAAAAMAAJ",
+            "volumeInfo": {
+                "title": "POSIX.4 Programmers Guide",
+                "subtitle": "Programming for the Real World",
+                "authors": [
+                    "Bill Gallmeister"
+                ],
+                "publisher": "O'Reilly",
+                "publishedDate": "1995",
+                "description": "What's \"real-world programming\"? Real-world programming (typically called real-time programming) is programming that interacts in some way with the \"real world\" of daily life. At one time, real-time systems were confined to very esoteric applications, like rocket guidance systems. Now, they play a role in almost every aspect of life: they control the brakes on your car, video games, automatic bank tellers -- and the disk drive in your computer. It won't be long before mundane devices like toasters and hair dryers have microprocessors built in, to say nothing of multimedia devices that haven't even been invented yet. Real-world applications are characterized by deadlines. If the brake processor in your car doesn't meet a deadline, your car doesn't stop; if your video game doesn't meet a deadline, the Klingons don't die when you shoot them; if your ATM doesn't meet a deadline, you may start looking for another bank. When you've just rear-ended another car, it's no consolation that a sudden flurry of input slowed down your brake processor, so it couldn't react quickly enough when you hit the pedal. This book covers the POSIX.4 standard for portable real-time programming. The POSIX.4 standard itself is a massive document that defines system interfaces for asynchronous I/O, scheduling, communications, and other facilities. However, this book does more than explain the standard. It provides a general introduction to real-time programming and real-time issues: the problems software faces when it needs to interact with the real world and how to solve them. And, unlike most books about standards, this one isn't just readable -- it's enjoyable! If you're at all interested in real-time applications -- which include just about everything from telemetry to transaction processing -- this book will be an essential reference. Chapters include: The Basics of Real-Time: Multiple Tasks Better Coordination: Messages, Shared Memory, and Synchronization On Time: Scheduling, Time, and Memory Locking I/O for the Real World Includes programming exercises, solutions, and reference manual pages.",
+                "industryIdentifiers": [
+                    {
+                        "type": "OTHER",
+                        "identifier": "UOM:39015037484493"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": false
+                },
+                "pageCount": 590,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.5.1.0.preview.0",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=ObNQAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=ObNQAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=ObNQAAAAMAAJ&q=prohramming&dq=prohramming&hl=&cd=10&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=ObNQAAAAMAAJ&dq=prohramming&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/POSIX_4_Programmers_Guide.html?hl=&id=ObNQAAAAMAAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=ObNQAAAAMAAJ&hl=&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "This book covers the POSIX.4 standard for portable real-time programming. The POSIX.4 standard itself is a massive document that defines system interfaces for asynchronous I/O, scheduling, communications, and other facilities."
+            }
+        }
+    ]
+}
