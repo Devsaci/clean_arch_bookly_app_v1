@@ -534,5 +534,7 @@ https://github.com/tharwatsamy/clean_arch_bookly_app/commit/e674152287f9aa8c7a3c
 52. Create local data source and add hive
 # generate book entity adapter
 https://github.com/tharwatsamy/clean_arch_bookly_app/commit/96f14070b0ab21bb7b6e44ae04322b451206cf46
+Command
+PS C:\Users\sacid\Documents\myproject\clean_arch_bookly_app_v1> flutter pub run build_runner build
 53. Generate book entity adapter
  
