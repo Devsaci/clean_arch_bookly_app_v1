@@ -528,4 +528,7 @@ https://www.googleapis.com/books/v1/volumes?=Filtering=free-ebooks&q=prohramming
 https://github.com/tharwatsamy/clean_arch_bookly_app/commit/23725f06be60a3f96ac306e686b18e2ccf57b113
 https://www.googleapis.com/books/v1/volumes?=Filtering=free-ebooks&Sorting=newest&q=prohramming
 51. Implement remote fetch newest books
+# create home local data source
+https://github.com/tharwatsamy/clean_arch_bookly_app/commit/e674152287f9aa8c7a3c1b8e6469ea0d4f6c5b7e
+52. Create local data source and add hive
  
