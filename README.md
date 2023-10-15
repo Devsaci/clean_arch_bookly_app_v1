@@ -524,4 +524,7 @@ https://github.com/tharwatsamy/clean_arch_bookly_app/commit/f41ce0696f5dda04551b
 https://www.googleapis.com/books/v1/volumes?q=prohramming
 https://www.googleapis.com/books/v1/volumes?=Filtering=free-ebooks&q=prohramming
 50. Implement remote fetch featured books
+# implement remote fetch newest books
+https://github.com/tharwatsamy/clean_arch_bookly_app/commit/23725f06be60a3f96ac306e686b18e2ccf57b113
+51. Implement remote fetch newest books
  
