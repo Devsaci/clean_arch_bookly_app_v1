@@ -1,3 +1,13 @@
-abstract class HomeRemoteDataSource {}
+import '../../domain/entities/book_entitiy.dart';
 
-class HomeRemoteDataSourceImpl extends HomeRemoteDataSource {}
+abstract class HomeRemoteDataSource {
+  Future<List<BookEntity>> fetchFeaturedBooks();
+}
+
+class HomeRemoteDataSourceImpl extends HomeRemoteDataSource {
+  @override
+  Future<List<BookEntity>> fetchFeaturedBooks() {
+    // TODO: implement fetchFeaturedBooks
+    throw UnimplementedError();
+  }
+}
