@@ -10,6 +10,7 @@ class BookEntity {
   final String title;
   @HiveField(3)
   final String? authorName;
+  @HiveField(4)
   final num? price;
   final num? rating;
 
