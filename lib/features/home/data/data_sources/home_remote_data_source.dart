@@ -1,3 +1,4 @@
+import '../../../../core/uttlls/api_service.dart';
 import '../../domain/entities/book_entitiy.dart';
 
 abstract class HomeRemoteDataSource {
@@ -6,6 +7,10 @@ abstract class HomeRemoteDataSource {
 }
 
 class HomeRemoteDataSourceImpl extends HomeRemoteDataSource {
+  final ApiService apiService;
+
+  HomeRemoteDataSourceImpl(this.apiService);
+
   @override
   Future<List<BookEntity>> fetchFeaturedBooks() {
     // TODO: implement fetchFeaturedBooks
