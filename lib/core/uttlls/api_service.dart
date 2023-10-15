@@ -6,6 +6,6 @@ class ApiService {
 
   ApiService(this._dio);
   get({required String endPoint}) async {
-    await _dio.get('$baseUrl$endPoint');
+    var response = await _dio.get('$baseUrl$endPoint');
   }
 }
