@@ -1,3 +1,6 @@
+import 'package:hive/hive.dart';
+
+@HiveType(typeId: 0)
 class BookEntity {
   final String bookId;
   final String? image;
