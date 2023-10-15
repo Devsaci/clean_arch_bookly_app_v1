@@ -2,6 +2,7 @@ import 'package:hive/hive.dart';
 
 @HiveType(typeId: 0)
 class BookEntity {
+  @HiveField(0)
   final String bookId;
   final String? image;
   final String title;
