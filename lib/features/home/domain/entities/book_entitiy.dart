@@ -4,6 +4,7 @@ import 'package:hive/hive.dart';
 class BookEntity {
   @HiveField(0)
   final String bookId;
+  @HiveField(1)
   final String? image;
   final String title;
   final String? authorName;
