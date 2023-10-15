@@ -532,4 +532,7 @@ https://www.googleapis.com/books/v1/volumes?=Filtering=free-ebooks&Sorting=newes
 # add hive to project
 https://github.com/tharwatsamy/clean_arch_bookly_app/commit/e674152287f9aa8c7a3c1b8e6469ea0d4f6c5b7e
 52. Create local data source and add hive
+# generate book entity adapter
+https://github.com/tharwatsamy/clean_arch_bookly_app/commit/96f14070b0ab21bb7b6e44ae04322b451206cf46
+53. Generate book entity adapter
  
