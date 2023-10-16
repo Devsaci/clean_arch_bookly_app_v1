@@ -26,7 +26,7 @@ class HomeRemoteDataSourceImpl extends HomeRemoteDataSource {
   }
 
 // extracted Method saveBooksData
-  void saveBooksData(List<BookEntity> books, String kFeaturedBox) {
+  void saveBooksData(List<BookEntity> books, String boxName) {
     var box = Hive.box(kFeaturedBox);
     box.addAll(books);
   }
