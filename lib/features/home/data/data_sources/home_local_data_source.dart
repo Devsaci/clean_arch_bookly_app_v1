@@ -8,20 +8,20 @@ abstract class HomeLocalDataSource {
 }
 
 class HomeLocalDataSourceImpl extends HomeLocalDataSource {
-  Box<BookEntity> featuredBox = Hive.box<BookEntity>(kFeaturedBox);
-  Box<BookEntity> newestBox = Hive.box<BookEntity>(kNewestBox);
+  // Box<BookEntity> featuredBox = Hive.box<BookEntity>(kFeaturedBox);
+  // Box<BookEntity> newestBox = Hive.box<BookEntity>(kNewestBox);
 
   @override
   List<BookEntity> fetchFeaturedBooks() {
     // implement fetch featured box local data source
-    //var box = Hive.box<BookEntity>(kFeaturedBox);
-    return featuredBox.values.toList();
+    var box = Hive.box<BookEntity>(kFeaturedBox);
+    return box.values.toList();
   }
 
   @override
   List<BookEntity> fetchNewestBooks() {
     // implement fetch NewestBox box local data source
-    //var box = Hive.box<BookEntity>(kNewestBox);
-    return newestBox.values.toList();
+    var box = Hive.box<BookEntity>(kNewestBox);
+    return box.values.toList();
   }
 }
