@@ -541,4 +541,8 @@ flutter pub run build_runner build --delete-conflicting-outputs FONCTIONNELLE CO
 # register adapter and open featured box
 https://github.com/tharwatsamy/clean_arch_bookly_app/commit/cbed29b2fc77adfbfff533840beb9368f677a8b3
 54. Register book entity adapter and open featured box
+# cache featured books
+https://github.com/tharwatsamy/clean_arch_bookly_app/commit/d20e7ef76c40da0715c0c4dceb47d09daee92d34
+55. Cache featured books
+
  
