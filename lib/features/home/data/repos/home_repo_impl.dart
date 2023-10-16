@@ -18,7 +18,9 @@ class HomeRepoImpl extends HomeRepo {
   Future<Either<Failure, List<BookEntity>>> fetchFeaturedBooks() async {
     try {
       var booksList = homeLocalDataSource.fetchFeaturedBooks();
-
+      if (booksList.isNotEmpty) {
+        return right(booksList);
+      }
       var books = await homeRemoteDataSource.fetchFeaturedBooks();
       return right(books);
     } on Exception catch (e) {
