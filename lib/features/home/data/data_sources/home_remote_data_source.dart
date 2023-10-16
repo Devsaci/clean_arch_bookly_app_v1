@@ -1,4 +1,6 @@
+import 'package:clean_arch_bookly_app_v1/constants.dart';
 import 'package:clean_arch_bookly_app_v1/features/home/data/models/book_model/book_model.dart';
+import 'package:hive/hive.dart';
 
 import '../../../../core/uttlls/api_service.dart';
 import '../../domain/entities/book_entity.dart';
@@ -18,6 +20,8 @@ class HomeRemoteDataSourceImpl extends HomeRemoteDataSource {
     var data = await apiService.get(
         endPoint: 'volumes?Filtering=free-ebooks&q=programming');
     List<BookEntity> books = getBooksList(data);
+    // cache featured books
+    Hive.box(kFeaturedBox);
     return books;
   }
 
