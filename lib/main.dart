@@ -11,11 +11,14 @@ import 'package:hive_flutter/adapters.dart';
 
 void main() async {
   runApp(const Bookly());
+  //initFlutter box
   await Hive.initFlutter();
+  //register adapter
   Hive.registerAdapter(BookEntityAdapter());
+  //cache featured books
   await Hive.openBox(kFeaturedBox);
   //cache newest books
-  await Hive.openBox("newest_box");
+  await Hive.openBox(kNewestBox);
 }
 
 class Bookly extends StatelessWidget {
