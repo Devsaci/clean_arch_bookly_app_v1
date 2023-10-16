@@ -538,4 +538,7 @@ Command
 PS C:\Users\sacid\Documents\myproject\clean_arch_bookly_app_v1> flutter pub run build_runner build non Fonctionnelle 
 flutter pub run build_runner build --delete-conflicting-outputs FONCTIONNELLE COMMAND
 53. Generate book entity adapter
+# register adapter and open featured box
+https://github.com/tharwatsamy/clean_arch_bookly_app/commit/cbed29b2fc77adfbfff533840beb9368f677a8b3
+54. Register book entity adapter and open featured box
  
