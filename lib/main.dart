@@ -16,9 +16,9 @@ void main() async {
   //register adapter
   Hive.registerAdapter(BookEntityAdapter());
   //cache featured books
-  await Hive.openBox(kFeaturedBox);
+  await Hive.openBox<BookEntity>(kFeaturedBox);
   //cache newest books
-  await Hive.openBox(kNewestBox);
+  await Hive.openBox<BookEntity>(kNewestBox);
 }
 
 class Bookly extends StatelessWidget {
