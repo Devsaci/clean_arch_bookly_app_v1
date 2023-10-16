@@ -21,12 +21,12 @@ class HomeRemoteDataSourceImpl extends HomeRemoteDataSource {
         endPoint: 'volumes?Filtering=free-ebooks&q=programming');
     List<BookEntity> books = getBooksList(data);
     // cache featured books
-    saveBooksData(books);
+    saveBooksData(books, kFeaturedBox);
     return books;
   }
 
 // extracted Method saveBooksData
-  void saveBooksData(List<BookEntity> books) {
+  void saveBooksData(List<BookEntity> books, String kFeaturedBox) {
     var box = Hive.box(kFeaturedBox);
     box.addAll(books);
   }
