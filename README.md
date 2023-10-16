@@ -547,5 +547,8 @@ https://github.com/tharwatsamy/clean_arch_bookly_app/commit/d20e7ef76c40da0715c0
 # implement fetch featured box local data source
 https://github.com/tharwatsamy/clean_arch_bookly_app/commit/08a9462979c3505fb005e611e3aa779ecf64c9c7
 56. Fetch featured books local data source
+# cache newest books
+https://github.com/tharwatsamy/clean_arch_bookly_app/commit/dabbc7f67da28a3f9174977c651eed86abc283d6
+57. Fetch newest books local data source
 
  
