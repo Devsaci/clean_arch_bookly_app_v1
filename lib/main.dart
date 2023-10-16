@@ -8,10 +8,10 @@ import 'package:clean_arch_bookly_app_v1/constants.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hive/hive.dart';
 
-void main() {
+void main() async {
   runApp(const Bookly());
   Hive.registerAdapter(BookEntityAdapter());
-  Hive.openBox("featured_box");
+  await Hive.openBox("featured_box");
 }
 
 class Bookly extends StatelessWidget {
