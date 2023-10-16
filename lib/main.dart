@@ -11,7 +11,7 @@ import 'package:hive/hive.dart';
 void main() async {
   runApp(const Bookly());
   Hive.registerAdapter(BookEntityAdapter());
-  await Hive.openBox("featured_box");
+  await Hive.openBox(kFeaturedBox);
 }
 
 class Bookly extends StatelessWidget {
