@@ -3,6 +3,7 @@ import 'package:clean_arch_bookly_app_v1/features/home/data/models/book_model/bo
 import 'package:hive/hive.dart';
 
 import '../../../../core/uttlls/api_service.dart';
+import '../../../../core/uttlls/functions/save_books.dart';
 import '../../domain/entities/book_entity.dart';
 
 abstract class HomeRemoteDataSource {
@@ -23,12 +24,6 @@ class HomeRemoteDataSourceImpl extends HomeRemoteDataSource {
     // cache featured books
     saveBooksData(books, kFeaturedBox);
     return books;
-  }
-
-// extracted Method saveBooksData
-  void saveBooksData(List<BookEntity> books, String boxName) {
-    var box = Hive.box(kFeaturedBox);
-    box.addAll(books);
   }
 
   @override
