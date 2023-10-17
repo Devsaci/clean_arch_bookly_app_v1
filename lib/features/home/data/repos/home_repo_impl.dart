@@ -25,7 +25,7 @@ class HomeRepoImpl extends HomeRepo {
       books = await homeRemoteDataSource.fetchFeaturedBooks();
       return right(books);
     } catch (e) {
-      return left(ServerFailure(e.toString()));
+      return left(ServerFailure.fromDiorError(e));
     }
   }
 
