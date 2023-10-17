@@ -554,4 +554,8 @@ https://github.com/tharwatsamy/clean_arch_bookly_app/commit/dabbc7f67da28a3f9174
 https://github.com/tharwatsamy/clean_arch_bookly_app/commit/c30689e754c4d6138066e7578d8439e97647d038
 58. Home repo impl
 59. Fetch featured books home repo impl
+# create server failure from dio error
+https://github.com/tharwatsamy/clean_arch_bookly_app/commit/1261b843118793e7de3c2bdf59a826ee62776736
+61. Server failure part 1
+
  
