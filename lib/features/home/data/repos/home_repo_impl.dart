@@ -45,6 +45,10 @@ class HomeRepoImpl extends HomeRepo {
       books = await homeRemoteDataSource.fetchNewestBooks();
       return right(books);
     } catch (e) {
+      // ignore: deprecated_member_use
+      if (e is DioError) {
+        return left(ServerFailure.fromDiorError(e));
+      }
       return left(ServerFailure(e.toString()));
     }
   }
