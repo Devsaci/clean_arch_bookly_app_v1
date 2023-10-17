@@ -6,4 +6,7 @@ abstract class Failure {
 
 class ServerFailure extends Failure {
   ServerFailure(super.message);
+  factory ServerFailure.fromDiorError(message) {
+    return ServerFailure(message);
+  }
 }
