@@ -14,14 +14,14 @@ class HomeLocalDataSourceImpl extends HomeLocalDataSource {
   @override
   List<BookEntity> fetchFeaturedBooks() {
     // implement fetch featured box local data source
-    var box = Hive.box<BookEntity>(kFeaturedBox);
+    Box<BookEntity> box = Hive.box<BookEntity>(kFeaturedBox);
     return box.values.toList();
   }
 
   @override
   List<BookEntity> fetchNewestBooks() {
     // implement fetch NewestBox box local data source
-    var box = Hive.box<BookEntity>(kNewestBox);
+    Box<BookEntity> box = Hive.box<BookEntity>(kNewestBox);
     return box.values.toList();
   }
 }
