@@ -16,23 +16,23 @@ class HomeRepoImpl extends HomeRepo {
 
   @override
   Future<Either<Failure, List<BookEntity>>> fetchFeaturedBooks() async {
+    List<BookEntity> books;
     try {
-      List<BookEntity> books;
       books = homeLocalDataSource.fetchFeaturedBooks();
       if (books.isNotEmpty) {
         return right(books);
       }
       books = await homeRemoteDataSource.fetchFeaturedBooks();
       return right(books);
-    } on Exception catch (e) {
+    } catch (e) {
       return left(ServerFailure());
     }
   }
 
   @override
   Future<Either<Failure, List<BookEntity>>> fetchNewsetBooks() async {
+    List<BookEntity> books;
     try {
-      List<BookEntity> books;
       books = homeLocalDataSource.fetchNewestBooks();
       if (books.isNotEmpty) {
         return right(books);
