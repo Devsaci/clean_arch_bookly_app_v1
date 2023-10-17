@@ -33,14 +33,25 @@ class ServerFailure extends Failure {
     }
   }
   factory ServerFailure.fromResponse(int statusCode, dynamic response) {
-    if (statusCode == 404) {
-      return ServerFailure('Your request was not found, please try later');
-    } else if (statusCode == 500) {
-      return ServerFailure('There is a problem with server, please try later');
-    } else if (statusCode == 400 || statusCode == 401 || statusCode == 403) {
-      return ServerFailure(response['error']['message']);
-    } else {
-      return ServerFailure('There was an error , please try again');
+    // if (statusCode == 404) {
+    //   return ServerFailure('Your request was not found, please try later');
+    // } else if (statusCode == 500) {
+    //   return ServerFailure('There is a problem with server, please try later');
+    // } else if (statusCode == 400 || statusCode == 401 || statusCode == 403) {
+    //   return ServerFailure(response['error']['message']);
+    // } else {
+    //   return ServerFailure('There was an error , please try again');
+    // }
+    switch (statusCode) {
+      case 404:
+        return ServerFailure('Your request was not found, please try later');
+      case == 500:
+        return ServerFailure(
+            'There is a problem with server, please try later');
+      case == 400 || 401 || 403:
+        return ServerFailure(response['error']['message']);
+      default:
+        return ServerFailure('There was an error , please try again');
     }
   }
 }
