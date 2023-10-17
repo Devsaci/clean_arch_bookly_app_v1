@@ -558,5 +558,6 @@ https://github.com/tharwatsamy/clean_arch_bookly_app/commit/c30689e754c4d6138066
 # create server failure from dio error
 https://github.com/tharwatsamy/clean_arch_bookly_app/commit/1261b843118793e7de3c2bdf59a826ee62776736
 61. Server failure part 1
+62. Server failure part 2
 
  
