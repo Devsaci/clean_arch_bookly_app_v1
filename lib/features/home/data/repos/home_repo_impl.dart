@@ -30,7 +30,7 @@ class HomeRepoImpl extends HomeRepo {
       if (e is DioError) {
         return left(ServerFailure.fromDiorError(e));
       }
-      return Future.error(e);
+      return left(ServerFailure(e.toString()));
     }
   }
 
