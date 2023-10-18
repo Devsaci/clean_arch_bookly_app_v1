@@ -559,5 +559,8 @@ https://github.com/tharwatsamy/clean_arch_bookly_app/commit/c30689e754c4d6138066
 https://github.com/tharwatsamy/clean_arch_bookly_app/commit/1261b843118793e7de3c2bdf59a826ee62776736
 61. Server failure part 1
 62. Server failure part 2
+# careate featured books states
+https://github.com/tharwatsamy/clean_arch_bookly_app/commit/a3555964fc7334a33dbdd94c1a8a81663ec02dd0
+64. Fetch featured books cubit states
 
  
