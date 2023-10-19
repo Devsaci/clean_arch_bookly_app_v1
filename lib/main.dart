@@ -4,6 +4,7 @@ import 'package:clean_arch_bookly_app_v1/features/home/data/data_sources/home_lo
 import 'package:clean_arch_bookly_app_v1/features/home/data/repos/home_repo_impl.dart';
 import 'package:clean_arch_bookly_app_v1/features/home/domain/entities/book_entity.dart';
 import 'package:clean_arch_bookly_app_v1/features/home/presentation/manger/featured_books_cubit/featured_books_cubit.dart';
+import 'package:clean_arch_bookly_app_v1/features/home/presentation/manger/newset_books_cubit/newset_books_cubit.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:clean_arch_bookly_app_v1/constants.dart';
@@ -17,6 +18,7 @@ import 'package:hive_flutter/adapters.dart';
 
 import 'features/home/data/data_sources/home_remote_data_source.dart';
 import 'features/home/domain/use_cases/fetch_featured_books_use_case.dart';
+import 'features/home/domain/use_cases/fetch_newest_books_use_case.dart';
 
 void main() async {
   runApp(const Bookly());
@@ -41,6 +43,22 @@ class Bookly extends StatelessWidget {
           create: (context) {
             return FeaturedBooksCubit(
               FetchFeaturedBooksUseCase(
+                HomeRepoImpl(
+                  homeLocalDataSource: HomeLocalDataSourceImpl(),
+                  homeRemoteDataSource: HomeRemoteDataSourceImpl(
+                    ApiService(
+                      Dio(),
+                    ),
+                  ),
+                ),
+              ),
+            );
+          },
+        ),
+        BlocProvider(
+          create: (context) {
+            return NewestBooksCubit(
+              FetchNewestdBooksUseCase(
                 HomeRepoImpl(
                   homeLocalDataSource: HomeLocalDataSourceImpl(),
                   homeRemoteDataSource: HomeRemoteDataSourceImpl(
