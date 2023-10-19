@@ -1,6 +1,6 @@
 part of 'featured_books_cubit.dart';
 
 @immutable
-sealed class FeaturedBooksCubitState {}
+abstract class FeaturedBooksState {}
 
-final class FeaturedBooksCubitInitial extends FeaturedBooksCubitState {}
+class FeaturedBooksInitial extends FeaturedBooksState {}

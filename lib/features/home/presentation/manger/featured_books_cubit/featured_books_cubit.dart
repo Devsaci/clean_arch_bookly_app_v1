@@ -3,6 +3,6 @@ import 'package:meta/meta.dart';
 
 part 'featured_books_state.dart';
 
-class FeaturedBooksCubitCubit extends Cubit<FeaturedBooksCubitState> {
-  FeaturedBooksCubitCubit() : super(FeaturedBooksCubitInitial());
+class FeaturedBooksCubit extends Cubit<FeaturedBooksState> {
+  FeaturedBooksCubit() : super(FeaturedBooksInitial());
 }
