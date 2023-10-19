@@ -568,6 +568,8 @@ https://github.com/tharwatsamy/clean_arch_bookly_app/commit/9d81f644873d60fee543
 # create newest books cubit
 https://github.com/tharwatsamy/clean_arch_bookly_app/commit/ce7a1f0b3f640374fbe297787a836f70c333d6dc
 66. Create fetch newest books
-
+# create simple bloc observer
+https://github.com/tharwatsamy/clean_arch_bookly_app/commit/d78a2055aa1ffe43720b28867bae40a1c610e0cb
+67. Bloc Provider
 
  
