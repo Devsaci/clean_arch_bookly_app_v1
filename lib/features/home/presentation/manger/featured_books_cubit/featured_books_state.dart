@@ -12,3 +12,5 @@ class FeaturedBooksFailure extends FeaturedBooksState {
 
   FeaturedBooksFailure(this.errMessage);
 }
+
+class FeaturedBooksSuccess extends FeaturedBooksState {}
