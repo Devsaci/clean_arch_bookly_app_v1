@@ -12,3 +12,5 @@ class NewestBooksSuccess extends NewestBooksState {
 
   NewestBooksSuccess(this.books);
 }
+
+class NewestBooksFailure extends NewestBooksState {}
