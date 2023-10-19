@@ -6,3 +6,5 @@ abstract class FeaturedBooksState {}
 class FeaturedBooksInitial extends FeaturedBooksState {}
 
 class FeaturedBooksLoading extends FeaturedBooksState {}
+
+class FeaturedBooksFailure extends FeaturedBooksState {}
