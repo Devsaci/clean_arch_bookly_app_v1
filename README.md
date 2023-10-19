@@ -571,5 +571,6 @@ https://github.com/tharwatsamy/clean_arch_bookly_app/commit/ce7a1f0b3f640374fbe2
 # create simple bloc observer
 https://github.com/tharwatsamy/clean_arch_bookly_app/commit/d78a2055aa1ffe43720b28867bae40a1c610e0cb
 67. Bloc Provider
+68. Get it part 1
 
  
