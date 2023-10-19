@@ -11,6 +11,7 @@ class NewestBooksCubit extends Cubit<NewestBooksState> {
   final FetchNewestdBooksUseCase fetchNewestdBooksUseCase;
   Future<void> fetchNewestBooks() async {
     emit(NewestBooksLoading());
-    await fetchNewestdBooksUseCase.call();
+    var result = await fetchNewestdBooksUseCase.call();
+    result.fold((l) => null, (r) => null);
   }
 }
