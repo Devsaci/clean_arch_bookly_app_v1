@@ -9,4 +9,5 @@ part 'newset_books_state.dart';
 class NewestBooksCubit extends Cubit<NewestBooksState> {
   NewestBooksCubit(this.fetchNewestdBooksUseCase) : super(NewestBooksInitial());
   final FetchNewestdBooksUseCase fetchNewestdBooksUseCase;
+  Future<void> fetchNewestBooks() async {}
 }
