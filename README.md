@@ -565,6 +565,9 @@ https://github.com/tharwatsamy/clean_arch_bookly_app/commit/a3555964fc7334a33dbd
 # implemtn cubit featch featured books
 https://github.com/tharwatsamy/clean_arch_bookly_app/commit/9d81f644873d60fee543bab6a447c8fc5b655b11
 65. Implement cubit fetch featured books method
+# create newest books cubit
+https://github.com/tharwatsamy/clean_arch_bookly_app/commit/ce7a1f0b3f640374fbe297787a836f70c333d6dc
+66. Create fetch newest books
 
 
  
