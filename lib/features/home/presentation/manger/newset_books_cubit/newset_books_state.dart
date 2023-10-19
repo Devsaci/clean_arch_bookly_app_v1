@@ -1,6 +1,8 @@
 part of 'newset_books_cubit.dart';
 
 @immutable
-sealed class NewsetBooksCubitState {}
+abstract class NewestBooksState {}
 
-final class NewsetBooksCubitInitial extends NewsetBooksCubitState {}
+class NewestBooksInitial extends NewestBooksState {}
+
+class NewestBooksLoading extends NewestBooksState {}
