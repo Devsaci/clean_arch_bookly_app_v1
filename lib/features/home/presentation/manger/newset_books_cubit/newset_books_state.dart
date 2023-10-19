@@ -6,3 +6,5 @@ abstract class NewestBooksState {}
 class NewestBooksInitial extends NewestBooksState {}
 
 class NewestBooksLoading extends NewestBooksState {}
+
+class NewestBooksSuccess extends NewestBooksState {}
