@@ -7,4 +7,6 @@ part 'featured_books_state.dart';
 
 class FeaturedBooksCubit extends Cubit<FeaturedBooksState> {
   FeaturedBooksCubit() : super(FeaturedBooksInitial());
+
+  Future<void> fetchFeaturedBooks() async {}
 }
