@@ -9,6 +9,6 @@ class FeaturedBooksCubit extends Cubit<FeaturedBooksState> {
   FeaturedBooksCubit() : super(FeaturedBooksInitial());
 
   Future<void> fetchFeaturedBooks() async {
-    emit(state);
+    emit(FeaturedBooksLoading());
   }
 }
