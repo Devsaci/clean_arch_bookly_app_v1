@@ -64,7 +64,7 @@ class Bookly extends StatelessWidget {
                 //     ),
                 //   ),
                 // ),
-                getIt.get(),
+                getIt.get<HomeRepoImpl>(),
               ),
             );
           },
