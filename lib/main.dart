@@ -27,7 +27,7 @@ void main() async {
   await Hive.initFlutter();
   //register adapter
   Hive.registerAdapter(BookEntityAdapter());
-  getIt.registerSingleton(
+  getIt.registerSingleton<HomeRepoImpl>(
     HomeRepoImpl(
       homeLocalDataSource: HomeLocalDataSourceImpl(),
       homeRemoteDataSource: HomeRemoteDataSourceImpl(
