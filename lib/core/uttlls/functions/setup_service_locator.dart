@@ -21,9 +21,10 @@ void setupServiceLocator() {
     HomeRepoImpl(
       homeLocalDataSource: HomeLocalDataSourceImpl(),
       homeRemoteDataSource: HomeRemoteDataSourceImpl(
-        ApiService(
-          Dio(),
-        ),
+        // ApiService(
+        //   Dio(),
+        // ),
+        getIt.get<ApiService>(),
       ),
     ),
   );
