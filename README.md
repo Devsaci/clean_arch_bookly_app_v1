@@ -575,5 +575,8 @@ https://github.com/tharwatsamy/clean_arch_bookly_app/commit/d78a2055aa1ffe43720b
 # create service locator
 https://github.com/tharwatsamy/clean_arch_bookly_app/commit/e98e7dbe4534ee287d0361e69dbb3f79e1f8d760
 69. Get it part 2
+# create simple bloc observer
+https://github.com/tharwatsamy/clean_arch_bookly_app/commit/d78a2055aa1ffe43720b28867bae40a1c610e0cb
+70. Bloc observer
 
  
