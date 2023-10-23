@@ -27,6 +27,15 @@ void main() async {
   await Hive.initFlutter();
   //register adapter
   Hive.registerAdapter(BookEntityAdapter());
+  // Extracted Methode setupServiceLocator
+  setupServiceLocator();
+  //cache featured books
+  await Hive.openBox<BookEntity>(kFeaturedBox);
+  //cache newest books
+  await Hive.openBox<BookEntity>(kNewestBox);
+}
+
+void setupServiceLocator() {
   getIt.registerSingleton<HomeRepoImpl>(
     HomeRepoImpl(
       homeLocalDataSource: HomeLocalDataSourceImpl(),
@@ -37,10 +46,6 @@ void main() async {
       ),
     ),
   );
-  //cache featured books
-  await Hive.openBox<BookEntity>(kFeaturedBox);
-  //cache newest books
-  await Hive.openBox<BookEntity>(kNewestBox);
 }
 
 final getIt = GetIt.instance;
