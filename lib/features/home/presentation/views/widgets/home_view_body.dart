@@ -23,7 +23,8 @@ class HomeViewBody extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 30),
                 child: CustomAppBar(),
               ),
-              const FeaturedBooksListView(),
+              // Extracted Methode FeatuedBooksListViewBlocBuilder
+              const FeatuedBooksListViewBlocBuilder(),
               const SizedBox(height: 20),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 30),
@@ -46,5 +47,16 @@ class HomeViewBody extends StatelessWidget {
         ),
       ],
     );
+  }
+}
+
+class FeatuedBooksListViewBlocBuilder extends StatelessWidget {
+  const FeatuedBooksListViewBlocBuilder({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return const FeaturedBooksListView();
   }
 }
