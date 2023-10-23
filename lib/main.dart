@@ -27,6 +27,16 @@ void main() async {
   await Hive.initFlutter();
   //register adapter
   Hive.registerAdapter(BookEntityAdapter());
+  getIt.registerSingleton(
+    HomeRepoImpl(
+      homeLocalDataSource: HomeLocalDataSourceImpl(),
+      homeRemoteDataSource: HomeRemoteDataSourceImpl(
+        ApiService(
+          Dio(),
+        ),
+      ),
+    ),
+  );
   //cache featured books
   await Hive.openBox<BookEntity>(kFeaturedBox);
   //cache newest books
