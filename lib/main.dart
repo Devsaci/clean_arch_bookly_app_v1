@@ -56,14 +56,15 @@ class Bookly extends StatelessWidget {
           create: (context) {
             return FeaturedBooksCubit(
               FetchFeaturedBooksUseCase(
-                HomeRepoImpl(
-                  homeLocalDataSource: HomeLocalDataSourceImpl(),
-                  homeRemoteDataSource: HomeRemoteDataSourceImpl(
-                    ApiService(
-                      Dio(),
-                    ),
-                  ),
-                ),
+                // HomeRepoImpl(
+                //   homeLocalDataSource: HomeLocalDataSourceImpl(),
+                //   homeRemoteDataSource: HomeRemoteDataSourceImpl(
+                //     ApiService(
+                //       Dio(),
+                //     ),
+                //   ),
+                // ),
+                getIt.get(),
               ),
             );
           },
