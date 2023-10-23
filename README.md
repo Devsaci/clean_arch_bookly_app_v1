@@ -572,5 +572,8 @@ https://github.com/tharwatsamy/clean_arch_bookly_app/commit/ce7a1f0b3f640374fbe2
 https://github.com/tharwatsamy/clean_arch_bookly_app/commit/d78a2055aa1ffe43720b28867bae40a1c610e0cb
 67. Bloc Provider
 68. Get it part 1
+# create service locator
+https://github.com/tharwatsamy/clean_arch_bookly_app/commit/e98e7dbe4534ee287d0361e69dbb3f79e1f8d760
+69. Get it part 2
 
  
