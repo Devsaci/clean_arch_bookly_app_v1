@@ -1,5 +1,6 @@
 import 'package:clean_arch_bookly_app_v1/core/uttlls/api_service.dart';
 import 'package:clean_arch_bookly_app_v1/core/uttlls/app_router.dart';
+import 'package:clean_arch_bookly_app_v1/core/uttlls/simple_bloc_observer.dart';
 import 'package:clean_arch_bookly_app_v1/features/home/data/data_sources/home_local_data_source.dart';
 import 'package:clean_arch_bookly_app_v1/features/home/data/repos/home_repo_impl.dart';
 import 'package:clean_arch_bookly_app_v1/features/home/domain/entities/book_entity.dart';
@@ -23,7 +24,6 @@ import 'features/home/domain/use_cases/fetch_featured_books_use_case.dart';
 import 'features/home/domain/use_cases/fetch_newest_books_use_case.dart';
 
 void main() async {
-  runApp(const Bookly());
   //initFlutter box
   await Hive.initFlutter();
   //register adapter
@@ -34,6 +34,8 @@ void main() async {
   await Hive.openBox<BookEntity>(kFeaturedBox);
   //cache newest books
   await Hive.openBox<BookEntity>(kNewestBox);
+  SimpleBlocObserver();
+  runApp(const Bookly());
 }
 
 class Bookly extends StatelessWidget {
