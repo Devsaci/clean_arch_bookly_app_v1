@@ -1,16 +1,16 @@
-import 'package:clean_arch_bookly_app_v1/core/uttlls/api_service.dart';
+// import 'package:clean_arch_bookly_app_v1/core/uttlls/api_service.dart';
 import 'package:clean_arch_bookly_app_v1/core/uttlls/app_router.dart';
 import 'package:clean_arch_bookly_app_v1/core/uttlls/simple_bloc_observer.dart';
-import 'package:clean_arch_bookly_app_v1/features/home/data/data_sources/home_local_data_source.dart';
+// import 'package:clean_arch_bookly_app_v1/features/home/data/data_sources/home_local_data_source.dart';
 import 'package:clean_arch_bookly_app_v1/features/home/data/repos/home_repo_impl.dart';
 import 'package:clean_arch_bookly_app_v1/features/home/domain/entities/book_entity.dart';
 import 'package:clean_arch_bookly_app_v1/features/home/presentation/manger/featured_books_cubit/featured_books_cubit.dart';
 import 'package:clean_arch_bookly_app_v1/features/home/presentation/manger/newset_books_cubit/newset_books_cubit.dart';
-import 'package:dio/dio.dart';
+// import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:clean_arch_bookly_app_v1/constants.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:get_it/get_it.dart';
+// import 'package:get_it/get_it.dart';
 // import 'package:clean_arch_bookly_app_v1/features/home/presentation/views/home_view.dart';
 // import 'package:clean_arch_bookly_app_v1/features/splash/presentation/views/splash_view.dart';
 // import 'package:go_router/go_router.dart';
@@ -19,7 +19,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:hive_flutter/adapters.dart';
 
 import 'core/uttlls/functions/setup_service_locator.dart';
-import 'features/home/data/data_sources/home_remote_data_source.dart';
+// import 'features/home/data/data_sources/home_remote_data_source.dart';
 import 'features/home/domain/use_cases/fetch_featured_books_use_case.dart';
 import 'features/home/domain/use_cases/fetch_newest_books_use_case.dart';
 
