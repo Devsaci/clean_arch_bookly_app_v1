@@ -9,6 +9,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:clean_arch_bookly_app_v1/constants.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:get_it/get_it.dart';
 // import 'package:clean_arch_bookly_app_v1/features/home/presentation/views/home_view.dart';
 // import 'package:clean_arch_bookly_app_v1/features/splash/presentation/views/splash_view.dart';
 // import 'package:go_router/go_router.dart';
@@ -31,6 +32,8 @@ void main() async {
   //cache newest books
   await Hive.openBox<BookEntity>(kNewestBox);
 }
+
+final getIt = GetIt.instance;
 
 class Bookly extends StatelessWidget {
   const Bookly({Key? key}) : super(key: key);
