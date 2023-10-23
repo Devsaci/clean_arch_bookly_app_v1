@@ -17,6 +17,7 @@ import 'package:google_fonts/google_fonts.dart';
 // import 'package:hive/hive.dart';
 import 'package:hive_flutter/adapters.dart';
 
+import 'core/uttlls/functions/setup_service_locator.dart';
 import 'features/home/data/data_sources/home_remote_data_source.dart';
 import 'features/home/domain/use_cases/fetch_featured_books_use_case.dart';
 import 'features/home/domain/use_cases/fetch_newest_books_use_case.dart';
@@ -33,19 +34,6 @@ void main() async {
   await Hive.openBox<BookEntity>(kFeaturedBox);
   //cache newest books
   await Hive.openBox<BookEntity>(kNewestBox);
-}
-
-void setupServiceLocator() {
-  getIt.registerSingleton<HomeRepoImpl>(
-    HomeRepoImpl(
-      homeLocalDataSource: HomeLocalDataSourceImpl(),
-      homeRemoteDataSource: HomeRemoteDataSourceImpl(
-        ApiService(
-          Dio(),
-        ),
-      ),
-    ),
-  );
 }
 
 final getIt = GetIt.instance;
