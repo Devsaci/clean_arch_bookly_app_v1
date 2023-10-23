@@ -1,4 +1,6 @@
+import 'package:clean_arch_bookly_app_v1/features/home/presentation/manger/featured_books_cubit/featured_books_cubit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'featured_list_view.dart';
 
@@ -9,6 +11,10 @@ class FeatuedBooksListViewBlocBuilder extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const FeaturedBooksListView();
+    return BlocBuilder<FeaturedBooksCubit, FeaturedBooksState>(
+      builder: (context, state) {
+        return const FeaturedBooksListView();
+      },
+    );
   }
 }
