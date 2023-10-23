@@ -8,7 +8,15 @@ import '../../../features/home/data/repos/home_repo_impl.dart';
 import '../api_service.dart';
 
 final getIt = GetIt.instance;
+
 void setupServiceLocator() {
+  // Injection depandence ApiService
+  getIt.registerSingleton<ApiService>(
+    ApiService(
+      Dio(),
+    ),
+  );
+  // injection depandence  HomeRepoImpl
   getIt.registerSingleton<HomeRepoImpl>(
     HomeRepoImpl(
       homeLocalDataSource: HomeLocalDataSourceImpl(),
