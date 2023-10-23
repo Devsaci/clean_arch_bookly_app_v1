@@ -578,5 +578,8 @@ https://github.com/tharwatsamy/clean_arch_bookly_app/commit/e98e7dbe4534ee287d03
 # create simple bloc observer
 https://github.com/tharwatsamy/clean_arch_bookly_app/commit/d78a2055aa1ffe43720b28867bae40a1c610e0cb
 70. Bloc observer
+# integrate featured books cubit
+https://github.com/tharwatsamy/clean_arch_bookly_app/commit/acb2a333dbb5a16edfdd95d9d263bccb3815199b
+71. Integrate fetch featured books cubit
 
  
