@@ -34,7 +34,7 @@ void main() async {
   await Hive.openBox<BookEntity>(kFeaturedBox);
   //cache newest books
   await Hive.openBox<BookEntity>(kNewestBox);
-  SimpleBlocObserver();
+  Bloc.observer = SimpleBlocObserver();
   runApp(const Bookly());
 }
 
