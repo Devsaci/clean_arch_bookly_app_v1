@@ -36,8 +36,6 @@ void main() async {
   await Hive.openBox<BookEntity>(kNewestBox);
 }
 
-final getIt = GetIt.instance;
-
 class Bookly extends StatelessWidget {
   const Bookly({Key? key}) : super(key: key);
 
