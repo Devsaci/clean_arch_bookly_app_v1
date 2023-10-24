@@ -67,7 +67,9 @@ class VolumeInfo {
                 json['readingModes'] as Map<String, dynamic>),
         pageCount: json['pageCount'] as int?,
         printType: json['printType'] as String?,
-        categories: json['categories'] as List<String>?,
+        categories: (json['categories'] as List<dynamic>?)
+            ?.map((category) => category.toString())
+            .toList(),
         averageRating: json['averageRating'] as num?,
         ratingsCount: json['ratingsCount'] as num?,
         maturityRating: json['maturityRating'] as String?,
