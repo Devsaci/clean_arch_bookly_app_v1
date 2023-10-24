@@ -11,7 +11,13 @@ class BestSellerListViewBlocBuilder extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<NewestBooksCubit, NewestBooksState>(
         builder: (context, state) {
-      return const BestSellerListView();
+      if (state is NewestBooksSuccess) {
+        return const BestSellerListView();
+      } else if (state is NewestBooksFailure) {
+        return Text(state.errMessage);
+      } else {
+        return const CircularProgressIndicator();
+      }
     });
   }
 }
