@@ -5,9 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'featured_list_view.dart';
 
 class FeatuedBooksListViewBlocBuilder extends StatelessWidget {
-  const FeatuedBooksListViewBlocBuilder({
-    super.key,
-  });
+  const FeatuedBooksListViewBlocBuilder({super.key});
 
   @override
   Widget build(BuildContext context) {
