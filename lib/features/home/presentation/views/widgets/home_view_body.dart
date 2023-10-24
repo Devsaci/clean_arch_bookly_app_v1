@@ -43,10 +43,22 @@ class HomeViewBody extends StatelessWidget {
         const SliverFillRemaining(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 10),
-            child: BestSellerListView(),
+            // Extracted Methode BestSellerListViewBlocBuilder
+            child: BestSellerListViewBlocBuilder(),
           ),
         ),
       ],
     );
+  }
+}
+
+class BestSellerListViewBlocBuilder extends StatelessWidget {
+  const BestSellerListViewBlocBuilder({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return const BestSellerListView();
   }
 }
