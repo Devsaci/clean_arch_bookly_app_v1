@@ -581,5 +581,7 @@ https://github.com/tharwatsamy/clean_arch_bookly_app/commit/d78a2055aa1ffe43720b
 # integrate featured books cubit
 https://github.com/tharwatsamy/clean_arch_bookly_app/commit/acb2a333dbb5a16edfdd95d9d263bccb3815199b
 71. Integrate fetch featured books cubit
+71. Integrate fetch Newested books cubit
+
 
  
