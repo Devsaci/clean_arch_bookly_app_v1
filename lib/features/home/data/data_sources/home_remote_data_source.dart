@@ -22,7 +22,7 @@ class HomeRemoteDataSourceImpl extends HomeRemoteDataSource {
         endPoint: 'volumes?Filtering=free-ebooks&q=programming');
     List<BookEntity> books = getBooksList(data);
     // cache featured books
-    saveBooksData(books, kFeaturedBox);
+    saveFeaturedBooksData(books, kFeaturedBox);
     return books;
   }
 
@@ -33,7 +33,7 @@ class HomeRemoteDataSourceImpl extends HomeRemoteDataSource {
             'volumes?=Filtering=free-ebooks&Sorting=newest&q=prohramming');
     List<BookEntity> books = getBooksList(data);
     //cache newest books
-    saveBooksData(books, kNewestBox);
+    saveNewestBooksData(books, kNewestBox);
     return books;
   }
 
