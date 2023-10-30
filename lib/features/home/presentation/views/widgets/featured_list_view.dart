@@ -1,10 +1,11 @@
+import 'package:clean_arch_bookly_app_v1/features/home/domain/entities/book_entity.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_book_ithem.dart';
 
 class FeaturedBooksListView extends StatelessWidget {
-  const FeaturedBooksListView({super.key});
-
+  const FeaturedBooksListView({super.key, required this.books});
+  final List<BookEntity> books;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
