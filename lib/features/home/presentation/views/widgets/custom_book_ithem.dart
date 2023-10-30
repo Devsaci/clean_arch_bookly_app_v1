@@ -4,7 +4,10 @@ import '../../../../../core/uttlls/assets.dart';
 
 class CustumBookImage extends StatelessWidget {
   //const CustumBookImage({super.key, required this.image});
-  const CustumBookImage({Key? key, required this.image}) : super(key: key);
+  const CustumBookImage({
+    Key? key,
+    required this.image,
+  }) : super(key: key);
   final String image;
   @override
   Widget build(BuildContext context) {
