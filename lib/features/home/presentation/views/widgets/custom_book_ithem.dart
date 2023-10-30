@@ -14,21 +14,10 @@ class CustumBookImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return AspectRatio(
       aspectRatio: 4.5 / 5,
-      // child: Container(
-      //   //height: MediaQuery.of(context).size.height * .25,
-      //   // width: 100,
-      //   decoration: BoxDecoration(
-      //     color: Colors.red,
-      //     borderRadius: BorderRadius.circular(60),
-      //     image: const DecorationImage(
-      //       fit: BoxFit.fitHeight,
-      //       image: AssetImage(
-      //         AssetsData.testImage,
-      //       ),
-      //     ),
-      //   ),
-      // ),
-      child: CachedNetworkImage(imageUrl: image),
+      child: CachedNetworkImage(
+        imageUrl: image,
+        fit: BoxFit.fill,
+      ),
     );
   }
 }
