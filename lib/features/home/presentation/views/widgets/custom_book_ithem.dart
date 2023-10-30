@@ -28,7 +28,7 @@ class CustumBookImage extends StatelessWidget {
       //     ),
       //   ),
       // ),
-      child: CachedNetworkImage(imageUrl: "imageUrl"),
+      child: CachedNetworkImage(imageUrl: image),
     );
   }
 }
