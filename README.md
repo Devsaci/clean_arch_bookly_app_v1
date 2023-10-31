@@ -593,5 +593,78 @@ https://github.com/tharwatsamy/clean_arch_bookly_app/commit/c84e9db40886b7e7a177
 https://github.com/tharwatsamy/clean_arch_bookly_app/commit/53186e93d8308d12aa3277132b461cdedcc7dd34
 75. Pagination part 3
 
+{ chatGpt 4 }
+trigger this request FeaturedBooksListView when this list view "class FeaturedBooksListView extends StatelessWidget {
+  const FeaturedBooksListView({super.key, required this.books});
+  final List<BookEntity> books;
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * .3,
+      child: ListView.builder(
+        itemCount: books.length,
+        scrollDirection: Axis.horizontal,
+        itemBuilder: (context, index) {
+          return Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8),
+            child: CustumBookImage(
+              image: books[index].image ?? '',
+            ),
+          );
+        },
+      ),
+    );
+  }
+  
+ import 'package:flutter/material.dart';
 
- 
+class YourStatefulWidget extends StatefulWidget {
+  @override
+  _YourStatefulWidgetState createState() => _YourStatefulWidgetState();
+}
+
+class _YourStatefulWidgetState extends State<YourStatefulWidget> {
+  ScrollController _scrollController;
+
+  @override
+  void initState() {
+    super.initState();
+    _scrollController = ScrollController();
+    _scrollController.addListener(_checkListLength);
+  }
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
+
+  void _checkListLength() {
+    final maxScrollExtent = _scrollController.position.maxScrollExtent;
+    final currentExtent = _scrollController.position.extentBefore;
+    final threshold = 0.7; // 70% of the list's length
+
+    if (currentExtent >= maxScrollExtent * threshold) {
+      // The list has reached 70% of its length, trigger the request here
+      // Example code: FeaturedBooksListView().triggerRequest()
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView.builder(
+      controller: _scrollController,
+      itemCount: books.length,
+      scrollDirection: Axis.horizontal,
+      itemBuilder: (context, index) {
+        return Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 8),
+          child: CustomBookImage(
+            image: books[index].image ?? '',
+          ),
+        );
+      },
+    );
+  }
+}
+
