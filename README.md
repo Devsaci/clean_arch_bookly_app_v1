@@ -590,6 +590,8 @@ https://github.com/tharwatsamy/clean_arch_bookly_app/commit/6321273cb48b735161dc
 https://github.com/tharwatsamy/clean_arch_bookly_app/commit/c84e9db40886b7e7a17749b799e89f65ceab0a82
 74. Pagination part 2
 # pagination part 1
+https://github.com/tharwatsamy/clean_arch_bookly_app/commit/53186e93d8308d12aa3277132b461cdedcc7dd34
+75. Pagination part 3
 
 
  
