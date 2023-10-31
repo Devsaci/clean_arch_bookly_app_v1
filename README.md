@@ -589,6 +589,7 @@ https://github.com/tharwatsamy/clean_arch_bookly_app/commit/6321273cb48b735161dc
 # refactor fetch featured books request
 https://github.com/tharwatsamy/clean_arch_bookly_app/commit/c84e9db40886b7e7a17749b799e89f65ceab0a82
 74. Pagination part 2
+# pagination part 1
 
 
  
