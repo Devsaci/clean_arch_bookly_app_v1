@@ -17,8 +17,11 @@ class _FeaturedBooksListViewState extends State<FeaturedBooksListView> {
   @override
   initState() {
     super.initState();
-    _scrollController.addListener(() {});
+    _scrollController = ScrollController();
+    _scrollController.addListener(_scrollListener);
   }
+
+  void _scrollListener() {}
 
   @override
   Widget build(BuildContext context) {
