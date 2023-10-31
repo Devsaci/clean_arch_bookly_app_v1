@@ -3,21 +3,27 @@ import 'package:flutter/material.dart';
 
 import 'custom_book_ithem.dart';
 
-class FeaturedBooksListView extends StatelessWidget {
+class FeaturedBooksListView extends StatefulWidget {
   const FeaturedBooksListView({super.key, required this.books});
   final List<BookEntity> books;
+
+  @override
+  State<FeaturedBooksListView> createState() => _FeaturedBooksListViewState();
+}
+
+class _FeaturedBooksListViewState extends State<FeaturedBooksListView> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: MediaQuery.of(context).size.height * .3,
       child: ListView.builder(
-        itemCount: books.length,
+        itemCount: widget.books.length,
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8),
             child: CustumBookImage(
-              image: books[index].image ?? '',
+              image: widget.books[index].image ?? '',
             ),
           );
         },
