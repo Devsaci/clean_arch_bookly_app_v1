@@ -21,7 +21,9 @@ class _FeaturedBooksListViewState extends State<FeaturedBooksListView> {
     _scrollController.addListener(_scrollListener);
   }
 
-  void _scrollListener() {}
+  void _scrollListener() {
+    _scrollController.position.pixels;
+  }
 
   @override
   Widget build(BuildContext context) {
