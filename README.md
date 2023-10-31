@@ -694,6 +694,9 @@ trigger this request fetchfeaturedBook when this list view 'class FeaturedBooksL
   }
 }'   reaches 70% of it's lenght
 //////////////////////////////////////{ chatGpt 4 }/////////////////////////////////
+
+1/1
+
 To trigger the function `fetchfeaturedBook` when the `FeaturedBooksListView` reaches 70% of its length, you can add a ScrollController which listens to the ListView's scroll events and alerts when the list has been scrolled to its 70% size.
 
 Below is a sample code snippet that demonstrates how you can implement this:
@@ -758,3 +761,68 @@ In this updated version of the widget, the `_onScroll` function is executed ever
 Please note that this will trigger the function every time the user scrolls past 70% point. If you want `fetchfeaturedBook` to be called only once, then you would have to incorporate additional check in `_onScroll` method.  
 
 //////////////////////////////////////////{ chatGpt 4 }//////////////////////////////////////
+
+2/2 
+
+To initiate the `fetchfeaturedBook` request when the `FeaturedBooksListView` List View reaches 70% of its length, you would want to use a ScrollController to listen to scroll events for the ListView. Here's an example of how you can do this:
+
+```dart
+class FeaturedBooksListView extends StatefulWidget {
+  FeaturedBooksListView({super.key, required this.books});
+  final List<BookEntity> books;
+
+  @override
+  _FeaturedBooksListViewState createState() => _FeaturedBooksListViewState();
+}
+
+class _FeaturedBooksListViewState extends State<FeaturedBooksListView> {
+
+  ScrollController _scrollController = ScrollController();
+
+  @override
+  void initState() {
+    super.initState();
+    _scrollController.addListener(() {
+      if (_scrollController.position.pixels >
+          _scrollController.position.maxScrollExtent * 0.7) {
+        // fetchfeaturedBook request goes here
+      }
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * .3,
+      child: ListView.builder(
+        controller: _scrollController,
+        itemCount: widget.books.length,
+        scrollDirection: Axis.horizontal,
+        itemBuilder: (BuildContext context, int index) {
+          return Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8),
+            child: CustumBookImage(
+              image: widget.books[index].image ?? '',
+            ),
+          );
+        },
+      ),
+    );
+  }
+}
+```
+
+In the `initState` method of `_FeaturedBooksListViewState`, the ScrollController `_scrollController` adds a listener that checks if the ListView has been scrolled to 70% of its length. If it has, it initiates the `fetchfeaturedBook` request. You'll want to replace the code comment with your code to fetch the books.
+
+Note that we changed `FeaturedBooksListView` to a StatefulWidget to properly manage the ScrollController's lifecycle. The ScrollController should be disposed in a `dispose` method to prevent memory leaks:
+
+```dart
+@override
+void dispose() {
+  _scrollController.dispose();
+  super.dispose();
+}
+```
+
+Be aware that continuous scrolling can trigger the fetch multiple times in this setup. Depending on your requirement, you might want to add a flag to prevent multiple triggers or initiate fetching the next batch of books.  
+//////////////////////////////////////////{ chatGpt 4 }////////////////////////////////////////////
