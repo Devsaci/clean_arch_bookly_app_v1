@@ -42,6 +42,7 @@ class _FeaturedBooksListViewState extends State<FeaturedBooksListView> {
     return SizedBox(
       height: MediaQuery.of(context).size.height * .3,
       child: ListView.builder(
+        controller: _scrollController,
         itemCount: widget.books.length,
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
