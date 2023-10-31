@@ -22,7 +22,7 @@ class _FeaturedBooksListViewState extends State<FeaturedBooksListView> {
   }
 
   void _scrollListener() {
-    _scrollController.position.pixels;
+    var currentPositions = _scrollController.position.pixels;
   }
 
   @override
