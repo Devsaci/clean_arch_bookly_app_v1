@@ -614,11 +614,11 @@ trigger this request FeaturedBooksListView when this list view "class FeaturedBo
         },
       ),
     );
-  }
-  
+  } " reaches 70% of it's lenght
+
  import 'package:flutter/material.dart';
 
-class YourStatefulWidget extends StatefulWidget {
+class FeaturedBooksListView extends StatefulWidget {
   @override
   _YourStatefulWidgetState createState() => _YourStatefulWidgetState();
 }
@@ -668,3 +668,93 @@ class _YourStatefulWidgetState extends State<YourStatefulWidget> {
   }
 }
 
+
+
+/////////////////////////////////////{ chatGpt 4 }/////////////////////////////////////
+trigger this request fetchfeaturedBook when this list view 'class FeaturedBooksListView extends StatelessWidget {
+  const FeaturedBooksListView({super.key, required this.books});
+  final List<BookEntity> books;
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * .3,
+      child: ListView.builder(
+        itemCount: books.length,
+        scrollDirection: Axis.horizontal,
+        itemBuilder: (context, index) {
+          return Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8),
+            child: CustumBookImage(
+              image: books[index].image ?? '',
+            ),
+          );
+        },
+      ),
+    );
+  }
+}'   reaches 70% of it's lenght
+//////////////////////////////////////{ chatGpt 4 }/////////////////////////////////
+To trigger the function `fetchfeaturedBook` when the `FeaturedBooksListView` reaches 70% of its length, you can add a ScrollController which listens to the ListView's scroll events and alerts when the list has been scrolled to its 70% size.
+
+Below is a sample code snippet that demonstrates how you can implement this:
+
+```dart
+import 'package:flutter/material.dart';
+
+class FeaturedBooksListView extends StatefulWidget {
+  final List<BookEntity> books;
+
+  const FeaturedBooksListView({super.key, required this.books});
+
+  @override
+  _FeaturedBooksListViewState createState() => _FeaturedBooksListViewState();
+}
+
+class _FeaturedBooksListViewState extends State<FeaturedBooksListView> {
+  final ScrollController _scrollController = ScrollController();
+
+  @override
+  void initState() {
+    super.initState();
+    _scrollController.addListener(_onScroll);
+  }
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
+
+  void _onScroll() {
+    if (_scrollController.position.pixels >
+        _scrollController.position.maxScrollExtent * 0.7) {
+      fetchfeaturedBook();
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * .3,
+      child: ListView.builder(
+        controller: _scrollController,
+        itemCount: books.length,
+        scrollDirection: Axis.horizontal,
+        itemBuilder: (context, index) {
+          return Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8),
+            child: CustumBookImage(
+              image: books[index].image ?? '',
+            ),
+          );
+        },
+      ),
+    );
+  }
+}
+```
+
+In this updated version of the widget, the `_onScroll` function is executed every time the user scrolls the list. When the current scroll position reaches 70% of the maximum scroll extent, it triggers the `fetchfeaturedBook` function. Don't forget to implement the `fetchfeaturedBook` function according to your requirements.
+Please note that this will trigger the function every time the user scrolls past 70% point. If you want `fetchfeaturedBook` to be called only once, then you would have to incorporate additional check in `_onScroll` method.  
+
+//////////////////////////////////////////{ chatGpt 4 }//////////////////////////////////////
