@@ -24,6 +24,7 @@ class _FeaturedBooksListViewState extends State<FeaturedBooksListView> {
   void _scrollListener() {
     var currentPositions = _scrollController.position.pixels;
     var maxScrollLength = _scrollController.position.maxScrollExtent;
+    if (currentPositions >= 0.7 * maxScrollLength) {}
   }
 
   @override
