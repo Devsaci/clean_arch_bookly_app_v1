@@ -1,6 +1,8 @@
 import 'package:clean_arch_bookly_app_v1/features/home/domain/entities/book_entity.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../manger/featured_books_cubit/featured_books_cubit.dart';
 import 'custom_book_ithem.dart';
 
 class FeaturedBooksListView extends StatefulWidget {
@@ -24,7 +26,9 @@ class _FeaturedBooksListViewState extends State<FeaturedBooksListView> {
   void _scrollListener() {
     var currentPositions = _scrollController.position.pixels;
     var maxScrollLength = _scrollController.position.maxScrollExtent;
-    if (currentPositions >= 0.7 * maxScrollLength) {}
+    if (currentPositions >= 0.7 * maxScrollLength) {
+      BlocProvider.of<FeaturedBooksCubit>(context);
+    }
   }
 
   @override
