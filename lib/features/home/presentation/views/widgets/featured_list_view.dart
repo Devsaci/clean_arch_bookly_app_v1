@@ -25,6 +25,7 @@ class _FeaturedBooksListViewState extends State<FeaturedBooksListView> {
 
   @override
   void dispose() {
+    _scrollController.dispose();
     super.dispose();
   }
 
