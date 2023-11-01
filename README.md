@@ -1,6 +1,8 @@
 # clean_arch_bookly_app_v1
 
 A new Flutter project.
+Flutter-Beginners-Projects
+https://github.com/tharwatsamy/Flutter-Beginners-Projects
 
 ## Getting Started
 
