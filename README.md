@@ -825,4 +825,8 @@ void dispose() {
 ```
 
 Be aware that continuous scrolling can trigger the fetch multiple times in this setup. Depending on your requirement, you might want to add a flag to prevent multiple triggers or initiate fetching the next batch of books.  
-//////////////////////////////////////////{ chatGpt 4 }////////////////////////////////////////////
+//////////////////////////////////////////{ chatGpt 4 }//////////////////////////////////////
+
+pagination part 1
+https://github.com/tharwatsamy/clean_arch_bookly_app/commit/53186e93d8308d12aa3277132b461cdedcc7dd34
+76. Pagination part 4
