@@ -23,6 +23,7 @@ class _FeatuedBooksListViewBlocConsumerState
         if (state is FeaturedBooksSuccess) {
           books.addAll(state.books);
         }
+        if (state is FeaturedBooksPaginationFailure) {}
       },
       builder: (context, state) {
         if (state is FeaturedBooksSuccess ||
