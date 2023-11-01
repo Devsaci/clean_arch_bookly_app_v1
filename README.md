@@ -842,3 +842,81 @@ https://github.com/tharwatsamy/clean_arch_bookly_app/commit/2a257a43b204d319450b
 78. Pagination states part 1
 # pagination states done
 79. Pagination States part 2
+////////////////////////////////////{ChatGPT 4}////////////////////////////////////
+
+create an error snack bar widget in flutter
+ 1 / 1
+Voici comment créer un widget de barre d'erreur (error snack bar) en utilisant Flutter :
+
+1. Ajoutez la dépendance à votre fichier "pubspec.yaml" :
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  fluttertoast: ^8.0.8
+```
+
+2. Exécutez la commande `flutter packages get` pour mettre à jour les dépendances.
+
+3. Importez le package `fluttertoast` dans votre fichier dart :
+```dart
+import 'package:fluttertoast/fluttertoast.dart';
+```
+
+4. Créez une fonction pour afficher une barre d'erreur :
+```dart
+void showErrorSnackBar(String errorMessage) {
+  Fluttertoast.showToast(
+    msg: errorMessage,
+    backgroundColor: Colors.red,
+    textColor: Colors.white,
+    fontSize: 16.0,
+    gravity: ToastGravity.BOTTOM,
+    toastLength: Toast.LENGTH_LONG,
+  );
+}
+```
+
+5. Utilisez la fonction `showErrorSnackBar` pour afficher une barre d'erreur où vous le souhaitez dans votre application. Par exemple :
+```dart
+RaisedButton(
+  onPressed: () {
+    showErrorSnackBar("Une erreur s'est produite !");
+  },
+  child: Text("Afficher une erreur"),
+),
+```
+
+Cela affichera une barre d'erreur avec un message donné en bas de l'écran lorsque le bouton est préssé.  
+////////////////////////////////////////{ChatGPT 4}///////////////////////////////////////
+2 / 2
+In Flutter, you can create a simple error Snackbar using the ScaffoldMessenger to show the Snackbar. You can see the sample code below:
+
+```dart
+ScaffoldMessenger.of(context).showSnackBar(
+    SnackBar(
+      content: Text('An error occurred!'),
+      backgroundColor: Colors.red,
+    ),
+);
+```
+
+However, details may vary depending on your requirements. For example, you might want to add an action to the SnackBar that allows the user to retry the operation that failed. Here is a customizable example:
+
+```dart
+ScaffoldMessenger.of(context).showSnackBar(
+  SnackBar(
+    content: Text('An error occurred!'),
+    backgroundColor: Colors.red,
+    action: SnackBarAction(
+      label: 'RETRY',
+      onPressed: () {
+        // Place your error-handling function here.
+      },
+    ),
+  ),
+);
+```
+
+This way, not only do you alert your users to an error, but you also give them a chance to handle it immediately.  
+//////////////////////////////////////////////////////////////////////////////////////

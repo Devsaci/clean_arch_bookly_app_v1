@@ -23,7 +23,20 @@ class _FeatuedBooksListViewBlocConsumerState
         if (state is FeaturedBooksSuccess) {
           books.addAll(state.books);
         }
-        if (state is FeaturedBooksPaginationFailure) {}
+        if (state is FeaturedBooksPaginationFailure) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: const Text('An error occurred!'),
+              backgroundColor: Colors.red,
+              action: SnackBarAction(
+                label: 'RETRY',
+                onPressed: () {
+                  // Place your error-handling function here.
+                },
+              ),
+            ),
+          );
+        }
       },
       builder: (context, state) {
         if (state is FeaturedBooksSuccess ||
