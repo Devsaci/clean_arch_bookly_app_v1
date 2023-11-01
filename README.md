@@ -840,3 +840,5 @@ https://github.com/tharwatsamy/clean_arch_bookly_app/commit/0228ce32ff80896bc15e
 # pagination states done
 https://github.com/tharwatsamy/clean_arch_bookly_app/commit/2a257a43b204d319450b443d4c6ac23464704fef
 78. Pagination states part 1
+# pagination states done
+79. Pagination States part 2
