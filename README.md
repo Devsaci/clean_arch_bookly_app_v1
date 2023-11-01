@@ -832,3 +832,7 @@ https://github.com/tharwatsamy/clean_arch_bookly_app/commit/53186e93d8308d12aa32
 # paginate local featch featured books
 https://github.com/tharwatsamy/clean_arch_bookly_app/commit/f5769d0e07da76a0789584e68423dc945a590f8c
 76. Pagination part 4
+
+# fix error with pagination
+https://github.com/tharwatsamy/clean_arch_bookly_app/commit/0228ce32ff80896bc15e04d286bee1f9f4a532c2
+77. Fix error with pagination
