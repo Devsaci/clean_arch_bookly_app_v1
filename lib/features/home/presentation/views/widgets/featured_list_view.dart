@@ -34,9 +34,8 @@ class _FeaturedBooksListViewState extends State<FeaturedBooksListView> {
     var maxScrollLength = _scrollController.position.maxScrollExtent;
     if (currentPositions >= 0.7 * maxScrollLength) {
       BlocProvider.of<FeaturedBooksCubit>(context).fetchFeaturedBooks(
-        pageNumber: nextPage,
+        pageNumber: nextPage++,
       );
-      nextPage++;
     }
   }
 
