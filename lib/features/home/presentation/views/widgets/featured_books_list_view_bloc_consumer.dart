@@ -50,7 +50,7 @@ class _FeatuedBooksListViewBlocConsumerState
     return SnackBar(
       duration: const Duration(seconds: 4),
       content: Text(state.errMessage),
-      backgroundColor: Colors.red,
+      backgroundColor: Colors.yellowAccent,
       action: SnackBarAction(
         label: 'RETRY',
         onPressed: () {
