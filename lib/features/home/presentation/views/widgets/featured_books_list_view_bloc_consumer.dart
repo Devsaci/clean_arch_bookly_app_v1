@@ -26,7 +26,8 @@ class _FeatuedBooksListViewBlocConsumerState
         if (state is FeaturedBooksPaginationFailure) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
-              content: const Text('An error occurred!'),
+              duration: const Duration(seconds: 4),
+              content: Text(state.errMessage),
               backgroundColor: Colors.red,
               action: SnackBarAction(
                 label: 'RETRY',
