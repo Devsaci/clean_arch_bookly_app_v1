@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../../../features/home/presentation/manger/featured_books_cubit/featured_books_cubit.dart';
-
-SnackBar buildErrorWidget(FeaturedBooksPaginationFailure state) {
+SnackBar buildErrorWidget(String errMessage) {
   return SnackBar(
     duration: const Duration(seconds: 4),
-    content: Text(state.errMessage),
+    content: Text(errMessage),
     backgroundColor: Colors.yellowAccent,
     action: SnackBarAction(
       label: 'RETRY',
