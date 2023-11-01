@@ -17,6 +17,7 @@ class HomeLocalDataSourceImpl extends HomeLocalDataSource {
     int endIndex = (pageNumber + 1) * 10;
     // implement fetch featured box local data source
     var box = Hive.box<BookEntity>(kFeaturedBox);
+    box.values.length;
     return box.values.toList().sublist(startIndex, endIndex);
     //return featuredBox.values.toList();
   }
