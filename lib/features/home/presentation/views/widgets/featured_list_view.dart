@@ -30,13 +30,13 @@ class _FeaturedBooksListViewState extends State<FeaturedBooksListView> {
     super.dispose();
   }
 
-  void _scrollListener() {
+  Future<void> _scrollListener() async {
     var currentPositions = _scrollController.position.pixels;
     var maxScrollLength = _scrollController.position.maxScrollExtent;
     if (currentPositions >= 0.7 * maxScrollLength) {
       if (isLoading) {
         isLoading = true;
-        BlocProvider.of<FeaturedBooksCubit>(context).fetchFeaturedBooks(
+        await BlocProvider.of<FeaturedBooksCubit>(context).fetchFeaturedBooks(
           pageNumber: nextPage++,
         );
       }
