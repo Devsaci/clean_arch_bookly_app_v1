@@ -25,17 +25,8 @@ class _FeatuedBooksListViewBlocConsumerState
         }
         if (state is FeaturedBooksPaginationFailure) {
           ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              duration: const Duration(seconds: 4),
-              content: Text(state.errMessage),
-              backgroundColor: Colors.red,
-              action: SnackBarAction(
-                label: 'RETRY',
-                onPressed: () {
-                  // Place your error-handling function here.
-                },
-              ),
-            ),
+            // Extracted Methode buildErrorWidget
+            buildErrorWidget(state),
           );
         }
       },
@@ -52,6 +43,20 @@ class _FeatuedBooksListViewBlocConsumerState
           return const CircularProgressIndicator();
         }
       },
+    );
+  }
+
+  SnackBar buildErrorWidget(FeaturedBooksPaginationFailure state) {
+    return SnackBar(
+      duration: const Duration(seconds: 4),
+      content: Text(state.errMessage),
+      backgroundColor: Colors.red,
+      action: SnackBarAction(
+        label: 'RETRY',
+        onPressed: () {
+          // Place your error-handling function here.
+        },
+      ),
     );
   }
 }
