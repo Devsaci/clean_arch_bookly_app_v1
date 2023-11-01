@@ -2,6 +2,7 @@ import 'package:clean_arch_bookly_app_v1/features/home/presentation/manger/featu
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../../core/uttlls/functions/build_error_snack_bar.dart';
 import '../../../domain/entities/book_entity.dart';
 import 'featured_list_view.dart';
 
@@ -46,17 +47,17 @@ class _FeatuedBooksListViewBlocConsumerState
     );
   }
 
-  SnackBar buildErrorWidget(FeaturedBooksPaginationFailure state) {
-    return SnackBar(
-      duration: const Duration(seconds: 4),
-      content: Text(state.errMessage),
-      backgroundColor: Colors.yellowAccent,
-      action: SnackBarAction(
-        label: 'RETRY',
-        onPressed: () {
-          // Place your error-handling function here.
-        },
-      ),
-    );
-  }
+  // SnackBar buildErrorWidget(FeaturedBooksPaginationFailure state) {
+  //   return SnackBar(
+  //     duration: const Duration(seconds: 4),
+  //     content: Text(state.errMessage),
+  //     backgroundColor: Colors.yellowAccent,
+  //     action: SnackBarAction(
+  //       label: 'RETRY',
+  //       onPressed: () {
+  //         // Place your error-handling function here.
+  //       },
+  //     ),
+  //   );
+  // }
 }
