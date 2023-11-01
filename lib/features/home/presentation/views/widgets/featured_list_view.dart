@@ -15,7 +15,7 @@ class FeaturedBooksListView extends StatefulWidget {
 
 class _FeaturedBooksListViewState extends State<FeaturedBooksListView> {
   late final ScrollController _scrollController;
-
+  var nextPage = 1;
   @override
   void initState() {
     super.initState();
