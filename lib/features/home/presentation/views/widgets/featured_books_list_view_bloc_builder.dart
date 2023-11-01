@@ -2,6 +2,7 @@ import 'package:clean_arch_bookly_app_v1/features/home/presentation/manger/featu
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../domain/entities/book_entity.dart';
 import 'featured_list_view.dart';
 
 class FeatuedBooksListViewBlocBuilder extends StatefulWidget {
@@ -14,6 +15,7 @@ class FeatuedBooksListViewBlocBuilder extends StatefulWidget {
 
 class _FeatuedBooksListViewBlocBuilderState
     extends State<FeatuedBooksListViewBlocBuilder> {
+  List<BookEntity> books = [];
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<FeaturedBooksCubit, FeaturedBooksState>(
