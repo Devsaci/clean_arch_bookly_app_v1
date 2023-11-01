@@ -28,7 +28,7 @@ class _FeatuedBooksListViewBlocBuilderState
         if (state is FeaturedBooksSuccess ||
             state is FeaturedBooksPaginationLoading) {
           return FeaturedBooksListView(
-            books: state is FeaturedBooksSuccess ? state.books : [],
+            books: books,
           );
         } else if (state is FeaturedBooksFailure) {
           return Text(state.errMessage);
