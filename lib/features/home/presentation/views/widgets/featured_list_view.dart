@@ -39,6 +39,7 @@ class _FeaturedBooksListViewState extends State<FeaturedBooksListView> {
         await BlocProvider.of<FeaturedBooksCubit>(context).fetchFeaturedBooks(
           pageNumber: nextPage++,
         );
+        isLoading = false;
       }
     }
   }
