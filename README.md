@@ -836,3 +836,7 @@ https://github.com/tharwatsamy/clean_arch_bookly_app/commit/f5769d0e07da76a07895
 # fix error with pagination
 https://github.com/tharwatsamy/clean_arch_bookly_app/commit/0228ce32ff80896bc15e04d286bee1f9f4a532c2
 77. Fix error with pagination
+
+# pagination states done
+https://github.com/tharwatsamy/clean_arch_bookly_app/commit/2a257a43b204d319450b443d4c6ac23464704fef
+78. Pagination states part 1
