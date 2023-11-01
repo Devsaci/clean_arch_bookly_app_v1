@@ -18,7 +18,8 @@ class _FeatuedBooksListViewBlocBuilderState
   List<BookEntity> books = [];
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<FeaturedBooksCubit, FeaturedBooksState>(
+    return BlocConsumer<FeaturedBooksCubit, FeaturedBooksState>(
+      listener: (context, state) {},
       builder: (context, state) {
         if (state is FeaturedBooksSuccess ||
             state is FeaturedBooksPaginationLoading) {
