@@ -4,9 +4,16 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'featured_list_view.dart';
 
-class FeatuedBooksListViewBlocBuilder extends StatelessWidget {
+class FeatuedBooksListViewBlocBuilder extends StatefulWidget {
   const FeatuedBooksListViewBlocBuilder({super.key});
 
+  @override
+  State<FeatuedBooksListViewBlocBuilder> createState() =>
+      _FeatuedBooksListViewBlocBuilderState();
+}
+
+class _FeatuedBooksListViewBlocBuilderState
+    extends State<FeatuedBooksListViewBlocBuilder> {
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<FeaturedBooksCubit, FeaturedBooksState>(
