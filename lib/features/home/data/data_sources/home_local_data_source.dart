@@ -13,6 +13,7 @@ class HomeLocalDataSourceImpl extends HomeLocalDataSource {
 
   @override
   List<BookEntity> fetchFeaturedBooks({int pageNumber = 0}) {
+    int startIndex = pageNumber * 10;
     // implement fetch featured box local data source
     var box = Hive.box<BookEntity>(kFeaturedBox);
     return box.values.toList();
