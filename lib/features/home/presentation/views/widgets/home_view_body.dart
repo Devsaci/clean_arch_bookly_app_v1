@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 
 import 'custom_app_bar.dart';
 
-import 'featured_books_list_view_bloc_builder.dart';
+import 'featured_books_list_view_bloc_consumer.dart';
 import 'newest_books_list_view_bloc_builder.dart';
 // import 'featured_list_view.dart';
 
@@ -28,7 +28,7 @@ class HomeViewBody extends StatelessWidget {
                 child: CustomAppBar(),
               ),
               // Extracted Methode FeatuedBooksListViewBlocBuilder
-              const FeatuedBooksListViewBlocBuilder(),
+              const FeatuedBooksListViewBlocConsumer(),
               const SizedBox(height: 20),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 30),
