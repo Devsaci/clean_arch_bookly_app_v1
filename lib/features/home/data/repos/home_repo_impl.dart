@@ -22,9 +22,8 @@ class HomeRepoImpl extends HomeRepo {
       if (booksList.isNotEmpty) {
         return right(booksList);
       }
-      booksList = await homeRemoteDataSource.fetchFeaturedBooks(
-        pageNumber: pageNumber,
-      );
+      booksList =
+          await homeRemoteDataSource.fetchFeaturedBooks(pageNumber: pageNumber);
       return right(booksList);
     } catch (e) {
       if (e is DioException) {
