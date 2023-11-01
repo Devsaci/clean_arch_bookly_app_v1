@@ -19,7 +19,9 @@ class _FeatuedBooksListViewBlocBuilderState
   @override
   Widget build(BuildContext context) {
     return BlocConsumer<FeaturedBooksCubit, FeaturedBooksState>(
-      listener: (context, state) {},
+      listener: (context, state) {
+        if (state is FeaturedBooksSuccess) {}
+      },
       builder: (context, state) {
         if (state is FeaturedBooksSuccess ||
             state is FeaturedBooksPaginationLoading) {
